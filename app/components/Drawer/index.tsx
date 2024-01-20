@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import {
 	IoChevronForward,
 	IoClose,
@@ -15,6 +16,8 @@ interface DrawerProps {
 }
 
 export function Drawer({ drawerOpen, toggleDrawer }: DrawerProps) {
+	const { t } = useTranslation();
+
 	return (
 		<div className="fixed w-screen flex flex-1 z-50">
 			<button
@@ -41,35 +44,35 @@ export function Drawer({ drawerOpen, toggleDrawer }: DrawerProps) {
 							onClick={toggleDrawer}
 							className="text-base leading-6 text-neutral-300"
 						>
-							Home
+							{t(`header.home`)}
 						</a>
 						<a
 							href="#About"
 							onClick={toggleDrawer}
 							className="text-base leading-6 text-neutral-300"
 						>
-							About
+							{t(`header.about`)}
 						</a>
 						<a
 							href="#Skills"
 							onClick={toggleDrawer}
 							className="text-base leading-6 text-neutral-300"
 						>
-							Skills
+							{t(`header.skills`)}
 						</a>
 						<a
 							href="#Projects"
 							onClick={toggleDrawer}
 							className="text-base leading-6 text-neutral-300"
 						>
-							Projects
+							{t(`header.projects`)}
 						</a>
 						<a
 							href="#Contact"
 							onClick={toggleDrawer}
 							className="text-base leading-6 text-neutral-300"
 						>
-							Contact
+							{t(`header.contact`)}
 						</a>
 					</div>
 					<div className="flex flex-1 flex-col justify-center items-center gap-8 p-4">

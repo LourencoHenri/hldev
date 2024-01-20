@@ -15,6 +15,7 @@ import {
 import ProjectCard from "../ProjectCard";
 import { IoChevronDownOutline, IoChevronUpOutline } from "react-icons/io5";
 import Skill from "../Skill";
+import { useTranslation } from "react-i18next";
 
 interface SkillsClassProps {
 	title: string;
@@ -33,17 +34,19 @@ function SkillsClass({ title, content }: SkillsClassProps) {
 }
 
 export default function Skills() {
+	const { t } = useTranslation();
+
 	return (
 		<>
 			<div
 				id="Skills"
 				className="flex flex-col items-center text-white p-20 mx-8 gap-8"
 			>
-				<h2 className="text-4xl font-semibold">Skills</h2>
+				<h2 className="text-4xl font-semibold">{t(`skills.title`)}</h2>
 
 				<div className="flex md:hidden lg:hidden flex-col gap-8 w-30">
 					<SkillsClass
-						title="Frameworks"
+						title={t(`skills.frameworks`)}
 						content={
 							<>
 								<Skill name="React" icon={<SiReact size={48} />} />
@@ -53,7 +56,7 @@ export default function Skills() {
 					/>
 
 					<SkillsClass
-						title="Systems and Platforms"
+						title={t(`skills.systemAndPlatforms`)}
 						content={
 							<>
 								<Skill name="Figma" icon={<SiFigma size={48} />} />
@@ -64,7 +67,7 @@ export default function Skills() {
 					/>
 
 					<SkillsClass
-						title="Styles"
+						title={t(`skills.styles`)}
 						content={
 							<>
 								<Skill name="MUI" icon={<SiMui size={48} />} />
@@ -78,7 +81,7 @@ export default function Skills() {
 					/>
 
 					<SkillsClass
-						title="Languages"
+						title={t(`skills.languages`)}
 						content={
 							<>
 								<Skill name="TypeScript" icon={<SiTypescript size={48} />} />
@@ -92,7 +95,7 @@ export default function Skills() {
 
 				<div className="hidden md:flex lg:flex flex-row text-white h-40 gap-8">
 					<SkillsClass
-						title="Frameworks"
+						title={t(`skills.frameworks`)}
 						content={
 							<>
 								<Skill name="React" icon={<SiReact size={48} />} />
@@ -104,7 +107,7 @@ export default function Skills() {
 					<div className="border-r border-neutral-600" />
 
 					<SkillsClass
-						title="Styles"
+						title={t(`skills.styles`)}
 						content={
 							<>
 								<Skill name="MUI" icon={<SiMui size={48} />} />
@@ -119,7 +122,7 @@ export default function Skills() {
 				</div>
 				<div className="hidden md:flex lg:flex flex-row h-48 gap-8">
 					<SkillsClass
-						title="Systems and Platforms"
+						title={t(`skills.systemAndPlatforms`)}
 						content={
 							<>
 								<Skill name="Figma" icon={<SiFigma size={48} />} />
@@ -132,7 +135,7 @@ export default function Skills() {
 					<div className="border-r border-neutral-600" />
 
 					<SkillsClass
-						title="Languages"
+						title={t(`skills.languages`)}
 						content={
 							<>
 								<Skill name="TypeScript" icon={<SiTypescript size={48} />} />

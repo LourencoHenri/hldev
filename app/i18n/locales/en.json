@@ -1,0 +1,46 @@
+{
+    "translation": {
+        "header": {
+            "home": "Home",
+            "about": "About",
+            "skills": "Skills",
+            "projects": "Projects",
+            "contact": "Contact"
+        },
+        "home": {
+            "name": "Henrique",
+            "hello": "Hello, my name is",
+            "role": "I'm Software Developer"
+        },
+        "about": {
+            "title": "About",
+            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nulla tenetur ratione voluptas dignissimos repellat, ipsa, eos a aspernatur mollitia quos eius molestias numquam voluptatum quisquam placeat voluptatem maxime et?",
+            "sentence": "Living, learning & leveling up one day at a time"
+        },
+        "skills": {
+            "title": "Skills",
+            "frameworks": "Frameworks",
+            "styles": "Styles",
+            "systemAndPlatforms": "System and Platforms",
+            "languages": "Languages"
+        },
+        "projects": {
+            "title": "Projects",
+            "subtitle": "Press access to visti the project page or the GitHub Icon to access the project in my reposityory.",
+            "card": {
+                "access": "Access"
+            }
+        },
+        "contact": {
+            "title": "Contact",
+            "subtitle": "Interested in work together? Contact me!",
+            "form": {
+                "name": "Name",
+                "company": "Company",
+                "email": "Email",
+                "message": "How can I help you?",
+                "submit": "Let's Talk"
+            }
+        }
+    }
+}

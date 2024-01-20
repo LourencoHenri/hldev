@@ -1,0 +1,46 @@
+{
+    "translation": {
+        "header": {
+            "home": "Inicio",
+            "about": "Acerca de",
+            "skills": "Habilidades",
+            "projects": "Proyectos",
+            "contact": "Contacto"
+        },
+        "home": {
+            "name": "Henrique",
+            "hello": "Hola, mi nombre es",
+            "role": "Soy Desarrollador de Software"
+        },
+        "about": {
+            "title": "Acerca de",
+            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nulla tenetur ratione voluptas dignissimos repellat, ipsa, eos a aspernatur mollitia quos eius molestias numquam voluptatum quisquam placeat voluptatem maxime et?",
+            "sentence": "Viviendo, aprendiendo y mejorando día a día"
+        },
+        "skills": {
+            "title": "Habilidades",
+            "frameworks": "Frameworks",
+            "styles": "Estilos",
+            "systemAndPlatforms": "Sistemas y Plataformas",
+            "languages": "Idiomas"
+        },
+        "projects": {
+            "title": "Proyectos",
+            "subtitle": "Presiona el acceso para visitar la página del proyecto o el ícono de GitHub para acceder al proyecto en mi repositorio.",
+            "card": {
+                "access": "Acceso"
+            }
+        },
+        "contact": {
+            "title": "Contacto",
+            "subtitle": "¿Interesado en trabajar juntos? ¡Contáctame!",
+            "form": {
+                "name": "Nombre",
+                "company": "Empresa",
+                "email": "Correo Electrónico",
+                "message": "¿Cómo puedo ayudarte?",
+                "submit": "Hablemos"
+            }
+        }
+    }
+}

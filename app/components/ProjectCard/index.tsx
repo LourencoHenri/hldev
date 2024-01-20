@@ -1,5 +1,6 @@
 import { SiGithub } from "react-icons/si";
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
 
 interface ProjectCardProps {
 	name: string;
@@ -15,10 +16,12 @@ export default function ProjectCard({
 	siteUrl,
 	image,
 }: ProjectCardProps) {
+	const { t } = useTranslation();
+
 	return (
 		<div className="flex flex-col bg-neutral-800 rounded-md">
 			<div className="flex h-20 overflow-hidden rounded-t-md justify-center items-center">
-				<Image src={image} alt={name} />
+				<img src={image} />
 			</div>
 
 			<div className="flex flex-1 flex-col p-4 gap-8">
@@ -35,7 +38,7 @@ export default function ProjectCard({
 							target="_blank"
 							className="p-2 rounded-md border border-transparent duration-300 cursor-pointer hover:bg-neutral-50 hover:text-neutral-800"
 						>
-							Access
+							{t(`projects.card.access`)}
 						</a>
 					)}
 

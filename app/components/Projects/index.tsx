@@ -1,6 +1,7 @@
 import { SiGithub } from "react-icons/si";
 import ProjectCard from "../ProjectCard";
 import { IoChevronDownOutline, IoChevronUpOutline } from "react-icons/io5";
+import { useTranslation } from "react-i18next";
 
 interface PortfolioProps {
 	id: number;
@@ -12,6 +13,8 @@ interface PortfolioProps {
 }
 
 export default function Projects() {
+	const { t } = useTranslation();
+
 	const portfolio: PortfolioProps[] = [
 		{
 			id: 8,
@@ -101,9 +104,9 @@ export default function Projects() {
 			className="flex flex-col text-white items-center py-20 mx-8 gap-12"
 		>
 			<div className="flex flex-col items-center text-center gap-4">
-				<h2 className="text-4xl font-semibold">Projects</h2>
+				<h2 className="text-4xl font-semibold">{t(`projects.title`)}</h2>
 				<p className="text-lg">
-					Press
+					{t(`projects.subtitle`)}
 					<span className="text-blue-400"> access </span>
 					to visti the project page or the
 					<span className="text-blue-400"> GitHub Icon </span>

@@ -6,6 +6,7 @@ import {
 	IoMail,
 } from "react-icons/io5";
 import { Field, Form, Formik } from "formik";
+import { useTranslation } from "react-i18next";
 
 interface InputProps {
 	name: string;
@@ -58,14 +59,16 @@ function Input({
 }
 
 export default function Contact() {
+	const { t } = useTranslation();
+
 	return (
 		<div
 			id="Contact"
 			className="flex flex-col items-center py-20 mx-8 gap-8 text-white"
 		>
 			<div className="flex flex-col items-center gap-4 text-center">
-				<h2 className="text-4xl font-semibold">Contact</h2>
-				<p className="text-lg">Interested in work together? Contact me!</p>
+				<h2 className="text-4xl font-semibold">{t(`contact.title`)}</h2>
+				<p className="text-lg">{t(`contact.subtitle`)}</p>
 			</div>
 			<div className="hidden md:flex md:flex-row justify-end gap-4">
 				<a
@@ -119,10 +122,10 @@ export default function Contact() {
 			</div>
 
 			<div className="flex flex-col gap-6 w-full md:max-w-xl">
-				<Input name="Name" />
-				<Input name="Company" />
-				<Input name="Email" />
-				<Input name="How can I help you?" rows={3} element="textarea" />
+				<Input name={t(`contact.form.name`)} />
+				<Input name={t(`contact.form.company`)} />
+				<Input name={t(`contact.form.email`)} />
+				<Input name={t(`contact.form.message`)} rows={3} element="textarea" />
 			</div>
 
 			<div className="flex w-full md:max-w-xl">
@@ -130,7 +133,7 @@ export default function Contact() {
 					type="submit"
 					className="block w-full rounded-md bg-blue-400 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-blue-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400 "
 				>
-					Let&apos;s talk
+					{t(`contact.form.submit`)}
 				</button>
 			</div>
 
