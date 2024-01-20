@@ -1,5 +1,5 @@
-import Image from "next/image";
 import { SiGithub } from "react-icons/si";
+import Image from "next/image";
 
 interface ProjectCardProps {
 	name: string;
@@ -12,7 +12,6 @@ interface ProjectCardProps {
 export default function ProjectCard({
 	name,
 	description,
-	gitHubUrl,
 	siteUrl,
 	image,
 }: ProjectCardProps) {
