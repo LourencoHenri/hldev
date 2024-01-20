@@ -1,11 +1,8 @@
 "use client";
 
-import Image from "next/image";
-import { IoMenu, IoSettingsSharp } from "react-icons/io5";
-
-import logo from "../assets/logoBlack.svg";
-import { LogoBlack } from "@/app/assets/logo/logoBlack";
-import { LogoWhite } from "@/app/assets/logo/LogoWhite";
+import { LogoWhite } from "../../assets/logo/LogoWhite";
+import { LogoBlack } from "../../assets/logo/LogoBlack";
+import { IoMenu } from "react-icons/io5";
 
 interface HeaderProps {
 	drawerOpen: boolean;

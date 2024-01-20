@@ -8,9 +8,8 @@ import Contact from "./components/Contact";
 import { Header } from "./components/Header";
 import { useState } from "react";
 import { Drawer } from "./components/Drawer";
-import Three, { Overlay } from "./components/Three";
+import Three from "./components/Three";
 import { SiGithub, SiLinkedin } from "react-icons/si";
-import HelloThree from "./components/ThreeText";
 
 export default function Home() {
 	const [drawerOpen, setDrawerOpen] = useState(false);
@@ -32,7 +31,7 @@ export default function Home() {
 					<h1 className="text-xl md:text-2xl">Hello, my name is</h1>
 					<h1 className="text-7xl md:text-9xl font-medium">Henrique</h1>
 					<h1 className="text-2xl md:text-3xl font-medium mt-2 md:mt-4">
-						I'm Software Developer
+						I&apos;m Software Developer
 					</h1>
 					<div className="flex justify-center gap-2 mt-2">
 						<a

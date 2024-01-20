@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { SiGithub } from "react-icons/si";
 
 interface ProjectCardProps {
@@ -18,7 +19,7 @@ export default function ProjectCard({
 	return (
 		<div className="flex flex-col bg-neutral-800 rounded-md">
 			<div className="flex h-20 overflow-hidden rounded-t-md justify-center items-center">
-				<img src={image} />
+				<Image src={image} alt={name} />
 			</div>
 
 			<div className="flex flex-1 flex-col p-4 gap-8">
