@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
+import 'rsuite/dist/rsuite-no-reset.min.css';
 import "./globals.css";
 
 export const metadata: Metadata = {

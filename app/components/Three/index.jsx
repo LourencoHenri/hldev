@@ -65,7 +65,7 @@ function Stars(props) {
 
 export default function Three() {
 	return (
-		<div id="Home" className="h-screen -z-10 border-b border-b-neutral-800">
+		<div id="Home" className="h-svh min-h-96 -z-10 border-b border-b-neutral-800">
 			{/* <Overlay /> */}
 			<Canvas camera={{ position: [0, 0, 1] }}>
 				<Stars />

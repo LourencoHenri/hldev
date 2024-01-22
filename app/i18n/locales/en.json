@@ -14,7 +14,8 @@
         },
         "about": {
             "title": "About",
-            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nulla tenetur ratione voluptas dignissimos repellat, ipsa, eos a aspernatur mollitia quos eius molestias numquam voluptatum quisquam placeat voluptatem maxime et?",
+            "subtitle": "A bit about myself",
+            "content": "My name is Henrique Lourenço, and I work as a software developer. I reside in Santos, SP, Brazil. With over a year of experience in software development, I've specialized in technologies like React, React Native, and Next.js, following the Kanban methodology for agile project management. Throughout this period, I've honed my skills in crafting optimized and efficient applications. Embracing the 'lifelong learning' lifestyle, I'm always eager to acquire and refine my knowledge.",
             "sentence": "Living, learning & leveling up one day at a time"
         },
         "skills": {
@@ -26,14 +27,15 @@
         },
         "projects": {
             "title": "Projects",
-            "subtitle": "Press access to visti the project page or the GitHub Icon to access the project in my reposityory.",
+            "subtitle": "My Projects Collection",
+            "instruction": "Press access to visti the project page or the GitHub Icon to access the project in my reposityory.",
             "card": {
                 "access": "Access"
             }
         },
         "contact": {
             "title": "Contact",
-            "subtitle": "Interested in work together? Contact me!",
+            "subtitle": "Contact me",
             "form": {
                 "name": "Name",
                 "company": "Company",

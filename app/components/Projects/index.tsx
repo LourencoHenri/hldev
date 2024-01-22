@@ -2,6 +2,7 @@ import { SiGithub } from "react-icons/si";
 import ProjectCard from "../ProjectCard";
 import { IoChevronDownOutline, IoChevronUpOutline } from "react-icons/io5";
 import { useTranslation } from "react-i18next";
+import PageHeader from "../PageHeader";
 
 interface PortfolioProps {
 	id: number;
@@ -104,14 +105,11 @@ export default function Projects() {
 			className="flex flex-col text-white items-center py-20 mx-8 gap-12"
 		>
 			<div className="flex flex-col items-center text-center gap-4">
-				<h2 className="text-4xl font-semibold">{t(`projects.title`)}</h2>
-				<p className="text-lg">
-					{t(`projects.subtitle`)}
-					<span className="text-blue-400"> access </span>
-					to visti the project page or the
-					<span className="text-blue-400"> GitHub Icon </span>
-					to access the project in my reposityory.
-				</p>
+				<PageHeader
+					title={t(`projects.title`)}
+					subtitle={t(`projects.subtitle`)}
+				/>
+				<p className="text-lg">{t(`projects.instruction`)}</p>
 			</div>
 			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:mx-8 gap-8">
 				{portfolio.map((project) => (

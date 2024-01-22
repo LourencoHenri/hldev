@@ -16,6 +16,7 @@ import ProjectCard from "../ProjectCard";
 import { IoChevronDownOutline, IoChevronUpOutline } from "react-icons/io5";
 import Skill from "../Skill";
 import { useTranslation } from "react-i18next";
+import PageHeader from "../PageHeader";
 
 interface SkillsClassProps {
 	title: string;
@@ -42,7 +43,7 @@ export default function Skills() {
 				id="Skills"
 				className="flex flex-col items-center text-white p-20 mx-8 gap-8"
 			>
-				<h2 className="text-4xl font-semibold">{t(`skills.title`)}</h2>
+				<PageHeader title={t(`skills.title`)} subtitle="These are my skills" />
 
 				<div className="flex md:hidden lg:hidden flex-col gap-8 w-30">
 					<SkillsClass

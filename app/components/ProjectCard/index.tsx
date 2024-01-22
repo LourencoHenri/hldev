@@ -25,10 +25,10 @@ export default function ProjectCard({
 			</div>
 
 			<div className="flex flex-1 flex-col p-4 gap-8">
-				<div className="flex flex-1 flex-col">
+				<div className="flex flex-1 gap-1 flex-col">
 					<h3 className="text-lg font-semibold">{name}</h3>
 
-					<p>{description}</p>
+					<p className="text-base">{description}</p>
 				</div>
 
 				<div className="flex flex-row justify-end items-center gap-4">

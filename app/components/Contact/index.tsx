@@ -7,6 +7,7 @@ import {
 } from "react-icons/io5";
 import { Field, Form, Formik } from "formik";
 import { useTranslation } from "react-i18next";
+import PageHeader from "../PageHeader";
 
 interface InputProps {
 	name: string;
@@ -66,10 +67,8 @@ export default function Contact() {
 			id="Contact"
 			className="flex flex-col items-center py-20 mx-8 gap-8 text-white"
 		>
-			<div className="flex flex-col items-center gap-4 text-center">
-				<h2 className="text-4xl font-semibold">{t(`contact.title`)}</h2>
-				<p className="text-lg">{t(`contact.subtitle`)}</p>
-			</div>
+			<PageHeader title={t(`contact.title`)} subtitle={t(`contact.subtitle`)} />
+
 			<div className="hidden md:flex md:flex-row justify-end gap-4">
 				<a
 					href="https://github.com/LourencoHenri"

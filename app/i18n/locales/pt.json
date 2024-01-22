@@ -14,7 +14,8 @@
         },
         "about": {
             "title": "Sobre",
-            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nulla tenetur ratione voluptas dignissimos repellat, ipsa, eos a aspernatur mollitia quos eius molestias numquam voluptatum quisquam placeat voluptatem maxime et?",
+            "subtitle": "Um pouco sobre mim",
+            "content": "Meu nome é Henrique Lourenço e trabalho como desenvolvedor de software. Resido em Santos, SP, Brasil. Com mais de um ano de experiência em desenvolvimento de software, especializei-me em tecnologias como React, React Native e Next.js, seguindo a metodologia Kanban para gerenciamento ágil de projetos. Ao longo desse período, aprimorei minhas habilidades na criação de aplicativos otimizados e eficientes. Adotando o estilo de vida de 'aprendizado contínuo', estou sempre ansioso para adquirir e aprimorar meus conhecimentos.",
             "sentence": "Vivendo, aprendendo e evoluindo um dia de cada vez"
         },
         "skills": {
@@ -26,14 +27,15 @@
         },
         "projects": {
             "title": "Projetos",
-            "subtitle": "Pressione o acesso para visitar a página do projeto ou o ícone do GitHub para acessar o projeto no meu repositório.",
+            "subtitle": "Minha coleção de projetos",
+            "instruction": "Pressione o acesso para visitar a página do projeto ou o ícone do GitHub para acessar o projeto no meu repositório.",
             "card": {
                 "access": "Acesso"
             }
         },
         "contact": {
             "title": "Contato",
-            "subtitle": "Interessado em trabalhar juntos? Entre em contato comigo!",
+            "subtitle": "Entre em contato comigo",
             "form": {
                 "name": "Nome",
                 "company": "Empresa",
