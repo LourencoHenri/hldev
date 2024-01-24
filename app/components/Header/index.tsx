@@ -137,7 +137,7 @@ export function Header() {
 					</a>
 
 					{/* <Popover className="relative">
-						<Popover.Button className="flex gap-2 justify-center items-center text-base leading-6 text-neutral-300 duration-300 hover:text-blue-400">
+						<Popover.Button disabled className="flex gap-2 justify-center items-center text-base leading-6 text-neutral-300 duration-300 hover:text-blue-400">
 							<span>Integrated Projects</span>
 							<IoChevronDown />
 						</Popover.Button>
