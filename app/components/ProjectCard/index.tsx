@@ -26,9 +26,9 @@ export default function ProjectCard({
 
 			<div className="flex flex-1 flex-col p-4 gap-8">
 				<div className="flex flex-1 gap-1 flex-col">
-					<h3 className="text-lg font-semibold">{name}</h3>
+					<h3 className="text-lg font-semibold">{t(`portfolio.${name}.title`)}</h3>
 
-					<p className="text-base">{description}</p>
+					<p className="text-base">{t(`portfolio.${name}.description`)}</p>
 				</div>
 
 				<div className="flex flex-row justify-end items-center gap-4">

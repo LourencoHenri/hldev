@@ -11,8 +11,10 @@ import { useState } from "react";
 // import { Drawer } from "./components/Drawer";
 import Three from "./components/Three";
 import { SiGithub, SiLinkedin } from "react-icons/si";
-import { I18nextProvider, useTranslation } from "react-i18next";
+import { I18nextProvider, useTranslation, Trans } from "react-i18next";
 import i18n from "./i18n/i18n";
+import Link from "next/link";
+import LocaleSwitcher from "./components/LocaleSwitcher";
 
 function Main() {
 	const { t } = useTranslation();

@@ -1,6 +1,6 @@
-import type { Metadata } from "next";
+import "rsuite/dist/rsuite-no-reset.min.css";
 import { Poppins } from "next/font/google";
-import 'rsuite/dist/rsuite-no-reset.min.css';
+import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 const poppins = Poppins({
 	weight: ["400", "500", "600", "700", "800"],
-  style: ['normal', 'italic'],
+	style: ["normal", "italic"],
 	subsets: ["latin"],
 	display: "swap",
 });
@@ -21,7 +21,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang="en" className="scroll-smooth" >
+		<html lang="en" className="scroll-smooth">
 			<body className={poppins.className}>{children}</body>
 		</html>
 	);

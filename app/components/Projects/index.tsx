@@ -11,6 +11,7 @@ interface PortfolioProps {
 	gitHubUrl: string;
 	siteUrl: string;
 	image: string;
+	
 }
 
 export default function Projects() {
@@ -19,27 +20,27 @@ export default function Projects() {
 	const portfolio: PortfolioProps[] = [
 		{
 			id: 8,
-			name: "Weather App",
+			name: "weatherApp",
 			description:
-				"The project is a web application that provides real-time weather information, with an intuitive and responsive interface.",
+				"Utilização de API para fornecer informações meteorológicas em tempo real.",
 			gitHubUrl: "https://github.com/LourencoHenri/weatherApp",
-			siteUrl: "https://weather-app-lourencohenri.vercel.app/",
+			siteUrl: "",
 			image:
 				"https://images.unsplash.com/photo-1522252234503-e356532cafd5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1025&q=80",
 		},
 		{
 			id: 2,
-			name: "Pomodoro Timer",
+			name: "pomodoroTimer",
 			description:
 				"Pomodoro Timer application that assists in time management and productivity enhancement.",
 			gitHubUrl: "https://github.com/LourencoHenri/pomodoroTimer",
-			siteUrl: "https://lourencohenri.github.io/pomodoroTimer/",
+			siteUrl: "",
 			image:
 				"https://img.freepik.com/vetores-gratis/fundo-de-tecnologia-de-rede-5g-com-linha-digital-azul_53876-119505.jpg?size=626&ext=jpg&ga=GA1.1.1049139390.1684335736&semt=sph",
 		},
 		{
 			id: 7,
-			name: "Toggle Theme - MUI",
+			name: "toggleThemeMui",
 			description:
 				"The Toggle Theme MUI project allows you to switch between light and dark themes in a web application.",
 			gitHubUrl: "https://github.com/LourencoHenri/toggleThemeMui",
@@ -49,7 +50,7 @@ export default function Projects() {
 		},
 		{
 			id: 3,
-			name: "Feed",
+			name: "feed",
 			description:
 				"Simulates a feed system, allowing the display of organized and interactive posts and comments.",
 			gitHubUrl: "https://github.com/LourencoHenri/feed",
@@ -59,19 +60,19 @@ export default function Projects() {
 		},
 		{
 			id: 4,
-			name: "ToDo List",
+			name: "toDoList",
 			description:
 				"Task list application, allowing users to create, organize, and manage their tasks efficiently and conveniently.",
 			gitHubUrl: "https://github.com/LourencoHenri/toDoList",
-			siteUrl: "https://lourencohenri.github.io/toDoList/",
+			siteUrl: "",
 			image:
 				"https://img.freepik.com/fotos-gratis/fundo-de-programacao-com-html_23-2150038863.jpg?size=626&ext=jpg&ga=GA1.2.1049139390.1684335736&semt=sph",
 		},
 		{
 			id: 6,
-			name: "Calculator",
+			name: "calculator",
 			description:
-				"The project offers an intuitive and user-friendly interface for performing both.",
+				"The project provides a calculator with both normal and scientific modes, featuring an intuitive interface.",
 			gitHubUrl: "https://github.com/LourencoHenri/calculator",
 			siteUrl: "",
 			image:
@@ -79,9 +80,9 @@ export default function Projects() {
 		},
 		{
 			id: 5,
-			name: "Shop",
+			name: "shop",
 			description:
-				"The project encompasses everything from the user interface to order processing and payments, providing a comprehensive solution for the online shopping experience.",
+				"The project incorporates e-commerce features, facilitating order processing and payment transactions.",
 			gitHubUrl: "https://github.com/LourencoHenri/Shop",
 			siteUrl: "",
 			image:
@@ -89,9 +90,9 @@ export default function Projects() {
 		},
 		{
 			id: 1,
-			name: "Coffee Shop",
+			name: "coffeeShop",
 			description:
-				"Sales system of a cafeteria. Allows for order control, providing an efficient solution for operation and administration.",
+				"The project includes café-related features, making it easy to handle orders and process payments efficiently.",
 			gitHubUrl: "https://github.com/LourencoHenri/coffeeShop",
 			siteUrl: "",
 			image:

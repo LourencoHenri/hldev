@@ -25,8 +25,10 @@ interface HeaderProps {
 	toggleDrawer: () => void;
 }
 
+type LanguageProps = "en-US" | "es-ES" | "pt-BR" | "de-GE";
+
 interface LanguagesProps {
-	id: string;
+	id: LanguageProps;
 	name: string;
 	image: any;
 }
@@ -63,39 +65,25 @@ export function Header() {
 		},
 	];
 
-	const [currentLanguage, setCurrentLanguage] = useState<LanguagesProps>({
-		id: "en-US",
-		name: "english",
-		image: usaFlag,
-	});
+	const currentLanguage = i18n.language;
 
 	const languagesWithoutCurrentLanguage = languages.filter(
-		(a) => a.id !== currentLanguage.id
+		(language) => language.id !== currentLanguage
 	);
 
-	function handleChangeLanguage(language: LanguagesProps) {
-		i18n.changeLanguage(language.id);
-		localStorage.setItem("language", language.id);
-		setCurrentLanguage(language);
+	const currentLanguageImage = languages.find(
+		(language) => language.id === currentLanguage
+	)?.image;
+
+	function handleChangeLanguage(language: string) {
+		i18n.changeLanguage(language);
+		localStorage.setItem("language", language);
 	}
 
 	useEffect(() => {
 		const storageLanguage = localStorage.getItem("language");
 
-		const language =
-			storageLanguage &&
-			languages.find((language) => language.id === storageLanguage);
-
-		storageLanguage
-			? i18n.changeLanguage(storageLanguage)
-			: i18n.changeLanguage("en-US");
-		storageLanguage
-			? language && setCurrentLanguage(language)
-			: setCurrentLanguage({
-					id: "en-US",
-					name: "english",
-					image: usaFlag,
-			  });
+		storageLanguage && i18n.changeLanguage(storageLanguage);
 	}, []);
 
 	return (
@@ -184,11 +172,13 @@ export function Header() {
 				<div className="hidden md:flex flex-row items-center justify-center gap-2">
 					<Popover className="relative">
 						<Popover.Button className="flex gap-2 p-1 justify-center items-center text-base leading-6 text-neutral-300 duration-300 hover:text-blue-400">
-							<Image
-								src={currentLanguage.image}
-								alt={currentLanguage.id}
-								width={24}
-							/>
+							{currentLanguageImage && (
+								<Image
+									src={currentLanguageImage}
+									alt={"Current Language"}
+									width={24}
+								/>
+							)}
 						</Popover.Button>
 
 						<Transition
@@ -206,7 +196,7 @@ export function Header() {
 										{languagesWithoutCurrentLanguage.map((language) => (
 											<button
 												key={language.id}
-												onClick={() => handleChangeLanguage(language)}
+												onClick={() => handleChangeLanguage(language.id)}
 												className="text-base p-1 rounded-full text-neutral-300 duration-300 hover:text-blue-400"
 											>
 												<Image
@@ -227,8 +217,8 @@ export function Header() {
 					<Popover className="relative">
 						<Popover.Button className="flex rounded-full gap-2 p-2 justify-center items-center text-base leading-6 text-neutral-300 duration-300 hover:text-blue-400">
 							<Image
-								src={currentLanguage.image}
-								alt={currentLanguage.id}
+								src={currentLanguageImage}
+								alt={"Current Language"}
 								width={24}
 							/>
 						</Popover.Button>
@@ -248,7 +238,7 @@ export function Header() {
 										{languagesWithoutCurrentLanguage.map((language) => (
 											<button
 												key={language.id}
-												onClick={() => handleChangeLanguage(language)}
+												onClick={() => handleChangeLanguage(language.id)}
 												className="text-base p-1 rounded-full text-neutral-300 duration-300 hover:text-blue-400"
 											>
 												<Image

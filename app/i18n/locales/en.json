@@ -15,7 +15,7 @@
         "about": {
             "title": "About",
             "subtitle": "A bit about myself",
-            "content": "My name is Henrique Lourenço, and I work as a software developer. I reside in Santos, SP, Brazil. With over a year of experience in software development, I've specialized in technologies like React, React Native, and Next.js, following the Kanban methodology for agile project management. Throughout this period, I've honed my skills in crafting optimized and efficient applications. Embracing the 'lifelong learning' lifestyle, I'm always eager to acquire and refine my knowledge.",
+            "content": "My name is Henrique Lourenço, and I work as a software developer. I live in Santos, São Paulo, Brazil. With over a year of experience in software development, I've specialized in technologies like React, React Native, and Next.js, following the Kanban methodology for agile project management. Throughout this period, I've honed my skills in crafting optimized and efficient applications. Embracing the 'lifelong learning' lifestyle, I'm always eager to acquire and refine my knowledge.",
             "sentence": "Living, learning & leveling up one day at a time"
         },
         "skills": {
@@ -28,7 +28,7 @@
         "projects": {
             "title": "Projects",
             "subtitle": "My Projects Collection",
-            "instruction": "Press access to visti the project page or the GitHub Icon to access the project in my reposityory.",
+            "instruction": "Press 'access' to visit the project page or the 'GitHub Icon' to access the project in my repository.",
             "card": {
                 "access": "Access"
             }
@@ -42,6 +42,40 @@
                 "email": "Email",
                 "message": "How can I help you?",
                 "submit": "Let's Talk"
+            }
+        },
+        "portfolio": {
+            "weatherApp": {
+                "title": "Weather App",
+                "description": "Utilization of API to provide real-time weather information."
+            },
+            "pomodoroTimer": {
+                "title": "Pomodoro Timer",
+                "description": "Pomodoro Timer application that assists in time management and productivity enhancement."
+            },
+            "toggleThemeMui": {
+                "title": "Toggle Theme - MUI",
+                "description": "The Toggle Theme MUI project allows you to switch between light and dark themes in a web application."
+            },
+            "feed": {
+                "title": "Feed",
+                "description": "Simulates a feed system, allowing the display of organized and interactive posts and comments."
+            },
+            "toDoList": {
+                "title": "ToDo List",
+                "description": "Task list application, allowing users to create, organize, and manage their tasks efficiently and conveniently."
+            },
+            "calculator": {
+                "title": "Calculator",
+                "description": "The project provides a calculator with both normal and scientific modes, featuring an intuitive interface."
+            },
+            "shop": {
+                "title": "Shop",
+                "description": "The project incorporates e-commerce features, facilitating order processing and payment transactions."
+            },
+            "coffeeShop": {
+                "title": "Coffee Shop",
+                "description": "The project includes café-related features, making it easy to handle orders and process payments efficiently."
             }
         }
     }

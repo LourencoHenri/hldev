@@ -15,7 +15,7 @@
         "about": {
             "title": "Über",
             "subtitle": "Ein wenig über mich",
-            "content": "Mein Name ist Henrique Lourenço und ich arbeite als Softwareentwickler. Ich lebe in Santos, SP, Brasilien. Mit über einem Jahr Erfahrung in der Softwareentwicklung habe ich mich auf Technologien wie React, React Native und Next.js spezialisiert und folge der Kanban-Methodik für agiles Projektmanagement. In diesem Zeitraum habe ich meine Fähigkeiten im Erstellen optimierter und effizienter Anwendungen verfeinert. Das Lebensmotto 'lebenslanges Lernen' umarmend, bin ich immer bestrebt, mein Wissen zu erwerben und zu verfeinern.",
+            "content": "Mein Name ist Henrique Lourenço und ich arbeite als Softwareentwickler. Ich lebe in Santos, São Paulo, Brasilien. Mit über einem Jahr Erfahrung in der Softwareentwicklung habe ich mich auf Technologien wie React, React Native und Next.js spezialisiert und folge der Kanban-Methodik für agiles Projektmanagement. In diesem Zeitraum habe ich meine Fähigkeiten im Erstellen optimierter und effizienter Anwendungen verfeinert. Das Lebensmotto 'lebenslanges Lernen' umarmend, bin ich immer bestrebt, mein Wissen zu erwerben und zu verfeinern.",
             "sentence": "Leben, lernen und sich jeden Tag verbessern"
         },
         "skills": {
@@ -28,7 +28,7 @@
         "projects": {
             "title": "Projekte",
             "subtitle": "Meine Projektsammlung",
-            "instruction": "Drücken Sie auf den Zugriff, um die Projektseite zu besuchen, oder auf das GitHub-Symbol, um auf das Projekt in meinem Repository zuzugreifen.",
+            "instruction": "Drücken Sie 'Zugriff', um die Projektseite zu besuchen, oder das 'GitHub-Symbol', um auf das Projekt in meinem Repository zuzugreifen.",
             "card": {
                 "access": "Zugriff"
             }
@@ -42,6 +42,40 @@
                 "email": "E-Mail",
                 "message": "Wie kann ich Ihnen helfen?",
                 "submit": "Lass uns reden"
+            }
+        },
+        "portfolio": {
+            "weatherApp": {
+                "title": "Wetter-App",
+                "description": "Verwendung einer API zur Bereitstellung von Echtzeit-Wetterinformationen."
+            },
+            "pomodoroTimer": {
+                "title": "Pomodoro Timer",
+                "description": "Pomodoro-Timer-Anwendung, die bei der Zeitverwaltung und Steigerung der Produktivität hilft."
+            },
+            "toggleThemeMui": {
+                "title": "Theme umschalten - MUI",
+                "description": "Das Toggle Theme MUI-Projekt ermöglicht es Ihnen, zwischen hellen und dunklen Themes in einer Webanwendung zu wechseln."
+            },
+            "feed": {
+                "title": "Feed",
+                "description": "Simuliert ein Feed-System und ermöglicht die Anzeige von organisierten und interaktiven Beiträgen und Kommentaren."
+            },
+            "toDoList": {
+                "title": "Aufgabenliste",
+                "description": "Aufgabenlistenanwendung, die es Benutzern ermöglicht, ihre Aufgaben effizient und bequem zu erstellen, zu organisieren und zu verwalten."
+            },
+            "calculator": {
+                "title": "Rechner",
+                "description": "Das Projekt bietet einen Taschenrechner mit normalen und wissenschaftlichen Modi und einer intuitiven Benutzeroberfläche."
+            },
+            "shop": {
+                "title": "Geschäft",
+                "description": "Das Projekt integriert E-Commerce-Funktionen und erleichtert die Bearbeitung von Bestellungen und Zahlungstransaktionen."
+            },
+            "coffeeShop": {
+                "title": "Café",
+                "description": "Das Projekt umfasst Funktionen im Zusammenhang mit Cafés und erleichtert die Bearbeitung von Bestellungen und Zahlungstransaktionen."
             }
         }
     }
