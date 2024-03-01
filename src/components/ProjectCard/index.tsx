@@ -38,7 +38,9 @@ export default function ProjectCard({
 
 				<div className="flex gap-4 flex-row justify-center">
 					{technologies &&
-						technologies.map((technology) => <>{technology.icon}</>)}
+						technologies.map((technology) => (
+							<div key={technology.name}>{technology.icon}</div>
+						))}
 				</div>
 
 				<div className="flex flex-row justify-end items-center pt-1 gap-4 border-t border-neutral-500">

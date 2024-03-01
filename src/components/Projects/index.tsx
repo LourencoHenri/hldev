@@ -211,16 +211,15 @@ export default function Projects() {
 			</div>
 			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:mx-8 gap-8">
 				{portfolio.map((project) => (
-					<div key={project.id}>
-						<ProjectCard
-							name={project.name}
-							description={project.description}
-							technologies={project.technologies}
-							gitHubUrl={project.gitHubUrl}
-							siteUrl={project.siteUrl}
-							image={project.image}
-						/>
-					</div>
+					<ProjectCard
+						key={project.id}
+						name={project.name}
+						description={project.description}
+						technologies={project.technologies}
+						gitHubUrl={project.gitHubUrl}
+						siteUrl={project.siteUrl}
+						image={project.image}
+					/>
 				))}
 			</div>
 		</div>
