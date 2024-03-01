@@ -1,3 +1,5 @@
+"use client"
+
 import { SiGithub, SiLinkedin } from "react-icons/si";
 import ProjectCard from "../ProjectCard";
 import {

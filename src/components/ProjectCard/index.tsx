@@ -25,13 +25,15 @@ export default function ProjectCard({
 			className="flex flex-col rounded-md bg-cover bg-center-y"
 			style={{ backgroundImage: `url(${image})` }}
 		>
-			<div className="flex flex-col rounded-md p-4 gap-4 flex-1 bg-neutral-800 opacity-90">
+			<div className="flex flex-col rounded-md p-4 gap-8 flex-1 bg-neutral-800 opacity-90">
 				<div className="flex gap-1 flex-col flex-1">
 					<h3 className="text-lg font-semibold">
 						{t(`portfolio.${name}.title`)}
 					</h3>
 
-					<p className="text-base">{t(`portfolio.${name}.description`)}</p>
+					<p className="text-base text-neutral-300">
+						{t(`portfolio.${name}.description`)}
+					</p>
 				</div>
 
 				<div className="flex gap-4 flex-row justify-center">
@@ -39,7 +41,7 @@ export default function ProjectCard({
 						technologies.map((technology) => <>{technology.icon}</>)}
 				</div>
 
-				<div className="flex flex-row justify-end items-center gap-4">
+				<div className="flex flex-row justify-end items-center pt-1 gap-4 border-t border-neutral-500">
 					{siteUrl && (
 						<a
 							href={siteUrl}

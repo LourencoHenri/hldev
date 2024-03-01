@@ -1,38 +1,10 @@
-import { match } from "@formatjs/intl-localematcher";
-import Negotiator from "negotiator";
-
-let headers = { "accept-language": "en-US,en;q=0.5" };
-let languages = new Negotiator({ headers }).languages();
-let locales = ["en-US", "de-GE", "pt-BR", "es-ES"];
-let defaultLocale = "en-US";
-
-match(languages, locales, defaultLocale); // -> 'en-US'
-
-// Get the preferred locale, similar to the above or using a library
-function getLocale(request) {}
+import { i18nRouter } from "next-i18n-router";
+import i18nConfig from "./i18nConfig";
 
 export function middleware(request) {
-	// Check if there is any supported locale in the pathname
-	const { pathname } = request.nextUrl;
-	const pathnameHasLocale = locales.some(
-		(locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
-	);
-
-	if (pathnameHasLocale) return;
-
-	// Redirect if there is no locale
-	const locale = getLocale(request);
-	request.nextUrl.pathname = `/${locale}${pathname}`;
-	// e.g. incoming request is /products
-	// The new URL is now /en-US/products
-	return Response.redirect(request.nextUrl);
+	return i18nRouter(request, i18nConfig);
 }
 
 export const config = {
-	matcher: [
-		// Skip all internal paths (_next)
-		"/((?!_next).*)",
-		// Optional: only run on root (/) URL
-		// '/'
-	],
+	matcher: "/((?!api|static|.*\\..*|_next).*)",
 };

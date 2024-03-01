@@ -1,82 +1,80 @@
 {
-    "translation": {
-        "header": {
-            "home": "Inicio",
-            "about": "Sobre",
-            "skills": "Habilidades",
-            "projects": "Proyectos",
-            "contact": "Contacto"
+    "header": {
+        "home": "Inicio",
+        "about": "Sobre",
+        "skills": "Habilidades",
+        "projects": "Proyectos",
+        "contact": "Contacto"
+    },
+    "home": {
+        "name": "Henrique",
+        "hello": "Hola, mi nombre es",
+        "role": "Soy Desarrollador de Software"
+    },
+    "about": {
+        "title": "Sobre",
+        "subtitle": "Un poco sobre mí",
+        "content": "Mi nombre es Henrique Lourenço y trabajo como desarrollador de software. Resido en Santos, São Paulo, Brasil. Con más de un año de experiencia en desarrollo de software, me he especializado en tecnologías como React, React Native y Next.js, siguiendo la metodología Kanban para la gestión ágil de proyectos. A lo largo de este período, he perfeccionado mis habilidades en la creación de aplicaciones optimizadas y eficientes. Adoptando el estilo de vida de 'aprendizaje constante', siempre estoy ansioso por adquirir y perfeccionar mis conocimientos.",
+        "sentence": "Viviendo, aprendiendo y mejorando un día a la vez"
+    },
+    "skills": {
+        "title": "Habilidades",
+        "frameworks": "Frameworks",
+        "styles": "Estilos",
+        "systemAndPlatforms": "Sistemas y Plataformas",
+        "languages": "Idiomas"
+    },
+    "projects": {
+        "title": "Proyectos",
+        "subtitle": "Mi colección de proyectos",
+        "instruction": "Presiona acceder para visitar la página del proyecto o el Ícono de GitHub para acceder al proyecto en mi repositorio.",
+        "card": {
+            "access": "Acceder"
+        }
+    },
+    "contact": {
+        "title": "Contacto",
+        "subtitle": "Contáctame",
+        "form": {
+            "name": "Nombre",
+            "company": "Empresa",
+            "email": "Correo Electrónico",
+            "message": "¿Cómo puedo ayudarte?",
+            "submit": "Hablemos"
+        }
+    },
+    "portfolio": {
+        "weatherApp": {
+            "title": "Aplicación del Tiempo",
+            "description": "Utilización de API para proporcionar información meteorológica en tiempo real."
         },
-        "home": {
-            "name": "Henrique",
-            "hello": "Hola, mi nombre es",
-            "role": "Soy Desarrollador de Software"
+        "pomodoroTimer": {
+            "title": "Temporizador Pomodoro",
+            "description": "Aplicación de Temporizador Pomodoro que ayuda en la gestión del tiempo y mejora de la productividad."
         },
-        "about": {
-            "title": "Sobre",
-            "subtitle": "Un poco sobre mí",
-            "content": "Mi nombre es Henrique Lourenço y trabajo como desarrollador de software. Resido en Santos, São Paulo, Brasil. Con más de un año de experiencia en desarrollo de software, me he especializado en tecnologías como React, React Native y Next.js, siguiendo la metodología Kanban para la gestión ágil de proyectos. A lo largo de este período, he perfeccionado mis habilidades en la creación de aplicaciones optimizadas y eficientes. Adoptando el estilo de vida de 'aprendizaje constante', siempre estoy ansioso por adquirir y perfeccionar mis conocimientos.",
-            "sentence": "Viviendo, aprendiendo y mejorando un día a la vez"
+        "toggleThemeMui": {
+            "title": "Alternar Tema - MUI",
+            "description": "El proyecto Toggle Theme MUI te permite cambiar entre temas claros y oscuros en una aplicación web."
         },
-        "skills": {
-            "title": "Habilidades",
-            "frameworks": "Frameworks",
-            "styles": "Estilos",
-            "systemAndPlatforms": "Sistemas y Plataformas",
-            "languages": "Idiomas"
+        "feed": {
+            "title": "Feed",
+            "description": "Simula un sistema de feed, permitiendo la visualización de publicaciones y comentarios organizados e interactivos."
         },
-        "projects": {
-            "title": "Proyectos",
-            "subtitle": "Mi colección de proyectos",
-            "instruction": "Presiona 'acceder' para visitar la página del proyecto o el 'Ícono de GitHub' para acceder al proyecto en mi repositorio.",
-            "card": {
-                "access": "Acceder"
-            }
+        "toDoList": {
+            "title": "Lista de Tareas",
+            "description": "Aplicación de lista de tareas que permite a los usuarios crear, organizar y gestionar sus tareas de manera eficiente y conveniente."
         },
-        "contact": {
-            "title": "Contacto",
-            "subtitle": "Contáctame",
-            "form": {
-                "name": "Nombre",
-                "company": "Empresa",
-                "email": "Correo Electrónico",
-                "message": "¿Cómo puedo ayudarte?",
-                "submit": "Hablemos"
-            }
+        "calculator": {
+            "title": "Calculadora",
+            "description": "El proyecto proporciona una calculadora con modos normal y científico, con una interfaz intuitiva."
         },
-        "portfolio": {
-            "weatherApp": {
-                "title": "Aplicación del Tiempo",
-                "description": "Utilización de API para proporcionar información meteorológica en tiempo real."
-            },
-            "pomodoroTimer": {
-                "title": "Temporizador Pomodoro",
-                "description": "Aplicación de Temporizador Pomodoro que ayuda en la gestión del tiempo y mejora de la productividad."
-            },
-            "toggleThemeMui": {
-                "title": "Alternar Tema - MUI",
-                "description": "El proyecto Toggle Theme MUI te permite cambiar entre temas claros y oscuros en una aplicación web."
-            },
-            "feed": {
-                "title": "Feed",
-                "description": "Simula un sistema de feed, permitiendo la visualización de publicaciones y comentarios organizados e interactivos."
-            },
-            "toDoList": {
-                "title": "Lista de Tareas",
-                "description": "Aplicación de lista de tareas que permite a los usuarios crear, organizar y gestionar sus tareas de manera eficiente y conveniente."
-            },
-            "calculator": {
-                "title": "Calculadora",
-                "description": "El proyecto proporciona una calculadora con modos normal y científico, con una interfaz intuitiva."
-            },
-            "shop": {
-                "title": "Tienda",
-                "description": "El proyecto incorpora funciones de comercio electrónico, facilitando el procesamiento de pedidos y transacciones de pago."
-            },
-            "coffeeShop": {
-                "title": "Cafetería",
-                "description": "El proyecto incluye funciones relacionadas con cafeterías, facilitando el manejo de pedidos y procesos de pago de manera eficiente."
-            }
+        "shop": {
+            "title": "Tienda",
+            "description": "El proyecto incorpora funciones de comercio electrónico, facilitando el procesamiento de pedidos y transacciones de pago."
+        },
+        "coffeeShop": {
+            "title": "Cafetería",
+            "description": "El proyecto incluye funciones relacionadas con cafeterías, facilitando el manejo de pedidos y procesos de pago de manera eficiente."
         }
     }
 }

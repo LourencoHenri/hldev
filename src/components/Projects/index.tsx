@@ -1,3 +1,5 @@
+"use client";
+
 import ProjectCard from "../ProjectCard";
 import { IoChevronDownOutline, IoChevronUpOutline } from "react-icons/io5";
 import { useTranslation } from "react-i18next";
@@ -209,15 +211,16 @@ export default function Projects() {
 			</div>
 			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:mx-8 gap-8">
 				{portfolio.map((project) => (
-					<ProjectCard
-						key={project.id}
-						name={project.name}
-						description={project.description}
-						technologies={project.technologies}
-						gitHubUrl={project.gitHubUrl}
-						siteUrl={project.siteUrl}
-						image={project.image}
-					/>
+					<div key={project.id}>
+						<ProjectCard
+							name={project.name}
+							description={project.description}
+							technologies={project.technologies}
+							gitHubUrl={project.gitHubUrl}
+							siteUrl={project.siteUrl}
+							image={project.image}
+						/>
+					</div>
 				))}
 			</div>
 		</div>

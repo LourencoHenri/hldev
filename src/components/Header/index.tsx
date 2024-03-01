@@ -1,7 +1,6 @@
 "use client";
 
 import { Fragment, useEffect, useState } from "react";
-import { useTranslation } from "react-i18next";
 
 import { LogoWhite } from "../../assets/logo/LogoWhite";
 
@@ -23,6 +22,9 @@ interface LanguagesProps {
 	name: string;
 	image: any;
 }
+
+import { useTranslation } from "react-i18next";
+import LanguageChanger from "../LanguageChanger";
 
 export default function Header() {
 	const { t, i18n } = useTranslation();
@@ -63,20 +65,6 @@ export default function Header() {
 		},
 	];
 
-	const currentLanguage = i18n.language;
-
-	const languagesWithoutCurrentLanguage = languages.filter(
-		(language) => language.id !== currentLanguage
-	);
-
-	const currentLanguageImage = languages.find(
-		(language) => language.id === currentLanguage
-	)?.image;
-
-	function handleChangeLanguage(language: string) {
-		i18n.changeLanguage(language);
-	}
-
 	return (
 		<header className="fixed left-0 top-0 w-full bg-[rgb(15,15,15)] lg:py-2 bg-opacity-85 shadow z-50">
 			<div
@@ -86,7 +74,7 @@ export default function Header() {
 				<a href="#Home" className="flex p-2 flex-1 md:p-0">
 					<LogoWhite />
 				</a>
-				
+
 				<div className="hidden md:flex flex-1 justify-center md:gap-x-8 lg:flex lg:gap-x-8">
 					<a
 						href="#Home"
@@ -121,33 +109,8 @@ export default function Header() {
 					</a>
 				</div>
 
-				<div className="hidden md:flex flex-1 flex-row items-center justify-end">
-					<div className="md:flex flex-row items-center justify-center gap-4">
-						<button
-							onClick={() => handleChangeLanguage("en-US")}
-							className="text-sm p-1 rounded-full text-neutral-300 duration-300 hover:text-blue-400"
-						>
-							EN
-						</button>
-						<button
-							onClick={() => handleChangeLanguage("de-GE")}
-							className="text-sm p-1 rounded-full text-neutral-300 duration-300 hover:text-blue-400"
-						>
-							DE
-						</button>
-						<button
-							onClick={() => handleChangeLanguage("pt-BR")}
-							className="text-sm p-1 rounded-full text-neutral-300 duration-300 hover:text-blue-400"
-						>
-							PT
-						</button>
-						<button
-							onClick={() => handleChangeLanguage("es-ES")}
-							className="text-sm p-1 rounded-full text-neutral-300 duration-300 hover:text-blue-400"
-						>
-							ES
-						</button>
-					</div>
+				<div className="hidden md:flex flex-1 items-center justify-end">
+					<LanguageChanger />
 				</div>
 
 				<div className="flex md:hidden">
@@ -211,32 +174,7 @@ export default function Header() {
 							</div>
 
 							<div className="flex p-4 text-right justify-end shadow">
-								<div className="flex flex-row justify-end flex-1 gap-2">
-									<button
-										onClick={() => handleChangeLanguage("en-US")}
-										className="text-sm p-1 rounded-full text-neutral-300 duration-300 hover:text-blue-400"
-									>
-										EN
-									</button>
-									<button
-										onClick={() => handleChangeLanguage("de-GE")}
-										className="text-sm p-1 rounded-full text-neutral-300 duration-300 hover:text-blue-400"
-									>
-										DE
-									</button>
-									<button
-										onClick={() => handleChangeLanguage("pt-BR")}
-										className="text-sm p-1 rounded-full text-neutral-300 duration-300 hover:text-blue-400"
-									>
-										PT
-									</button>
-									<button
-										onClick={() => handleChangeLanguage("es-ES")}
-										className="text-sm p-1 rounded-full text-neutral-300 duration-300 hover:text-blue-400"
-									>
-										ES
-									</button>
-								</div>
+								<LanguageChanger />
 							</div>
 						</div>
 					</Drawer.Body>
