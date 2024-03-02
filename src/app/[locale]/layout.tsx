@@ -4,8 +4,8 @@ import type { Metadata } from "next";
 import "../globals.css";
 
 export const metadata: Metadata = {
-	title: "HLDEV - Portfolio",
-	description: "Henrique Portfolio",
+	title: "HLDEV",
+	description: "Portfolio site developed by Henrique Lourenço",
 };
 
 const poppins = Poppins({
@@ -22,6 +22,17 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en" className="scroll-smooth">
+			<head>
+				<meta property="og:image" content="/og.png" />
+				<meta property="og:image:type" content="image/png" />
+				<meta property="og:image:width" content="1200" />
+				<meta property="og:image:height" content="600" />
+
+				<meta name="twitter:image" content="/twitter.png" />
+				<meta name="twitter:image:type" content="image/png" />
+				<meta name="twitter:image:width" content="1200" />
+				<meta name="twitter:image:height" content="600" />
+			</head>
 			<body className={poppins.className}>{children}</body>
 		</html>
 	);
