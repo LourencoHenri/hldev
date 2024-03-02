@@ -6,6 +6,7 @@ import "../globals.css";
 export const metadata: Metadata = {
 	title: "HLDEV",
 	description: "Portfolio site developed by Henrique Lourenço",
+	applicationName: "HLDEV",
 };
 
 const poppins = Poppins({
