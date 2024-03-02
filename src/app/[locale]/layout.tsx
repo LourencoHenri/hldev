@@ -7,6 +7,10 @@ export const metadata: Metadata = {
 	title: "HLDEV",
 	description: "Portfolio website developed by Henrique Lourenço",
 	applicationName: "HLDEV",
+	openGraph: {
+		title: "HLDEV",
+		description: "Portfolio website developed by Henrique Lourenço"
+	}
 };
 
 const poppins = Poppins({
@@ -28,7 +32,7 @@ export default function RootLayout({
 				<meta property="og:image:type" content="image/png" />
 				<meta property="og:title" content="HLDEV" />
 				<meta
-					property="og:content"
+					property="og:description"
 					content="Portfolio website developed by Henrique Lourenço"
 				/>
 				<meta property="og:image:width" content="1200" />
