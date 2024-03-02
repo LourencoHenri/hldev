@@ -5,7 +5,7 @@ import "../globals.css";
 
 export const metadata: Metadata = {
 	title: "HLDEV",
-	description: "Portfolio site developed by Henrique Lourenço",
+	description: "Portfolio website developed by Henrique Lourenço",
 	applicationName: "HLDEV",
 };
 
@@ -26,11 +26,21 @@ export default function RootLayout({
 			<head>
 				<meta property="og:image" content="/og.png" />
 				<meta property="og:image:type" content="image/png" />
+				<meta property="og:title" content="HLDEV" />
+				<meta
+					property="og:content"
+					content="Portfolio website developed by Henrique Lourenço"
+				/>
 				<meta property="og:image:width" content="1200" />
 				<meta property="og:image:height" content="600" />
 
 				<meta name="twitter:image" content="/twitter.png" />
 				<meta name="twitter:image:type" content="image/png" />
+				<meta property="twitter:title" content="HLDEV" />
+				<meta
+					property="twitter:content"
+					content="Portfolio website developed by Henrique Lourenço"
+				/>
 				<meta name="twitter:image:width" content="1200" />
 				<meta name="twitter:image:height" content="600" />
 			</head>
