@@ -114,9 +114,9 @@ export default function Header() {
 				</div>
 
 				<div className="flex md:hidden">
-					<button className="rounded-full p-2 lg:hidden" onClick={toggleDrawer}>
+					<a className="rounded-full p-2 lg:hidden" onClick={toggleDrawer}>
 						<IoMenu size={28} />
-					</button>
+					</a>
 				</div>
 
 				<Drawer
@@ -128,12 +128,12 @@ export default function Header() {
 					<Drawer.Body className="bg-neutral-800 m-0 p-0 h-svh">
 						<div className="flex flex-col flex-1 h-full justify-between">
 							<div className="p-2 flex justify-end shadow">
-								<button
+								<a
 									onClick={toggleDrawer}
 									className="flex p-2 justify-end rounded-full"
 								>
 									<IoClose size={28} />
-								</button>
+								</a>
 							</div>
 							<div className="flex flex-1 flex-col gap-4 p-4 text-right shadow">
 								<a
