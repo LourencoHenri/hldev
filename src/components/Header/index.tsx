@@ -66,16 +66,16 @@ export default function Header() {
 	];
 
 	return (
-		<header className="fixed left-0 top-0 w-full bg-[rgb(15,15,15)] lg:py-2 bg-opacity-85 shadow z-50">
+		<header className="fixed left-0 top-0 w-full bg-[rgb(15,15,15)] py-2 bg-opacity-85 shadow z-50 ">
 			<div
-				className="mx-auto flex items-center justify-between md:justify-between p-2 lg:px-8"
+				className="mx-auto flex items-center justify-between lg:justify-between px-2 lg:p-2 lg:px-4 duration-1000"
 				aria-label="Global"
 			>
-				<a href="#Home" className="flex p-2 flex-1 md:p-0">
+				<a href="#Home" className="flex p-2 flex-1 lg:p-0">
 					<LogoWhite />
 				</a>
 
-				<div className="hidden md:flex flex-1 justify-center md:gap-x-8 lg:flex lg:gap-x-8">
+				<div className="hidden lg:flex flex-1 gap-x-8 justify-center">
 					<a
 						href="#Home"
 						className="text-base leading-6 text-neutral-300 hover:text-blue-400"
@@ -109,11 +109,11 @@ export default function Header() {
 					</a>
 				</div>
 
-				<div className="hidden md:flex flex-1 items-center justify-end">
+				<div className="hidden lg:flex flex-1 items-center justify-end">
 					<LanguageChanger />
 				</div>
 
-				<div className="flex md:hidden">
+				<div className="flex lg:hidden">
 					<a className="rounded-full p-2 lg:hidden" onClick={toggleDrawer}>
 						<IoMenu size={28} />
 					</a>
