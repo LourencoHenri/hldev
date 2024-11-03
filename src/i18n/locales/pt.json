@@ -75,6 +75,30 @@
         "coffeeShop": {
             "title": "Cafeteria",
             "description": "O projeto inclui recursos relacionados a cafeterias, tornando fácil lidar com pedidos e processar pagamentos de forma eficiente."
+        },
+        "gymMobileApp": {
+            "title": "Gym - Mobile",
+            "description": "Aplicativo de treino prototipado no Figma e desenvolvido em React Native."
+        },
+        "gymApi": {
+            "title": "Gym - API",
+            "description": "API para aplicativo de treino desenvolvida em Node.js, utilizando Prisma e Docker."
+        },
+        "gymPassSystem": {
+            "title": "GymPass System",
+            "description": "API desenvolvida em Node.js, utilizando Prisma e Docker."
+        },
+        "findAFriend": {
+            "title": "Find a Friend",
+            "description": "API para sistema de busca de animais, desenvolvida em Node.js, utilizando Fastify."
+        },
+        "dailyDietApi": {
+            "title": "Daily Diet",
+            "description": "API para sistema de controle nutricional, desenvolvida em Node.js, utilizando Prisma e Docker."
+        },
+        "saasApi": {
+            "title": "SaaS System API",
+            "description": "API desenvolvida em Node.js, utilizando Prisma e Docker."
         }
     }
 }

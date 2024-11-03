@@ -10,17 +10,18 @@ export default function About() {
 	const { t } = useTranslation();
 
 	return (
-		<div id="About" className="flex flex-col pb-20 pt-40 mx-8 gap-32">
+		<div id="About" className="flex flex-col pb-20 pt-40 mx-8 gap-40">
 			<div className="flex text-white flex-col items-center text-center gap-4">
 				<PageHeader title={t(`about.title`)} subtitle={t(`about.subtitle`)} />
 
-
-				<p className="text-lg leading-relaxed md:w-4/5">{t(`about.content`)}</p>
+				<p className="text-lg leading-relaxed md:w-3/5 text-justify">
+					{t(`about.content`)}
+				</p>
 				<a
 					href={"/curriculum.pdf"}
 					target="_blank"
 					download={"Curriculum - Henrique Lourenço.pdf"}
-					className="p-2 rounded-md border border-transparent duration-300 cursor-pointer bg-neutral-50 text-neutral-800 md:hover:text-neutral-50 md:hover:bg-transparent"
+					className="p-2 rounded-md border border-transparent duration-300 cursor-pointer bg-transparent text-neutral-50 md:hover:text-neutral-800 md:hover:bg-neutral-50"
 				>
 					<div className="flex gap-2 items-center justify-center">
 						<FiDownload size={28} />
