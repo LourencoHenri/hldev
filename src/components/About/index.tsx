@@ -18,7 +18,7 @@ export default function About() {
 					{t(`about.content`)}
 				</p>
 				<a
-					href={"/curriculum.pdf"}
+					href={"/Currículo - Henrique Lourenço.pdf"}
 					target="_blank"
 					download={"Curriculum - Henrique Lourenço.pdf"}
 					className="p-2 rounded-md border border-transparent duration-300 cursor-pointer bg-transparent text-neutral-50 md:hover:text-neutral-800 md:hover:bg-neutral-50"
