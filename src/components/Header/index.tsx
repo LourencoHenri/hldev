@@ -3,6 +3,8 @@
 import { Fragment, useEffect, useState } from "react";
 
 import { LogoWhite } from "../../assets/logo/LogoWhite";
+import { LogoBlack } from "../../assets/logo/LogoBlack";
+import { useTheme } from "next-themes";
 
 import { Popover, Transition } from "@headlessui/react";
 import { Drawer } from "rsuite";
@@ -25,9 +27,16 @@ interface LanguagesProps {
 
 import { useTranslation } from "react-i18next";
 import LanguageChanger from "../LanguageChanger";
+import ThemeToggle from "../ThemeToggle";
 
 export default function Header() {
 	const { t, i18n } = useTranslation();
+	const { theme } = useTheme();
+	const [mounted, setMounted] = useState(false);
+
+	useEffect(() => {
+		setMounted(true);
+	}, []);
 
 	const [openDrawer, setOpenDrawer] = useState(false);
 
@@ -66,50 +75,55 @@ export default function Header() {
 	];
 
 	return (
-		<header className="fixed left-0 top-0 w-full bg-[rgb(15,15,15)] py-2 bg-opacity-85 shadow z-50 ">
+		<header className="fixed left-0 top-0 w-full bg-white dark:bg-[rgb(15,15,15)] py-2 bg-opacity-85 dark:bg-opacity-85 shadow-sm z-50 transition-colors duration-300">
 			<div
 				className="mx-auto flex items-center justify-between lg:justify-between px-2 lg:p-2 lg:px-4 duration-1000"
 				aria-label="Global"
 			>
 				<a href="#Home" className="flex p-2 flex-1 lg:p-0">
-					<LogoWhite />
+					{mounted && (theme === "dark" || theme === "system") ? (
+						<LogoWhite />
+					) : (
+						<LogoBlack />
+					)}
 				</a>
 
 				<div className="hidden lg:flex flex-1 gap-x-8 justify-center">
 					<a
 						href="#Home"
-						className="text-base leading-6 text-neutral-300 hover:text-blue-400"
+						className="text-base leading-6 text-neutral-600 dark:text-neutral-300 hover:text-blue-400 dark:hover:text-blue-400"
 					>
 						{t(`header.home`)}
 					</a>
 					<a
 						href="#About"
-						className="text-base leading-6 text-neutral-300 duration-300 hover:text-blue-400"
+						className="text-base leading-6 text-neutral-600 dark:text-neutral-300 duration-300 hover:text-blue-400 dark:hover:text-blue-400"
 					>
 						{t(`header.about`)}
 					</a>
 					<a
 						href="#Skills"
-						className="text-base leading-6 text-neutral-300 duration-300 hover:text-blue-400"
+						className="text-base leading-6 text-neutral-600 dark:text-neutral-300 duration-300 hover:text-blue-400 dark:hover:text-blue-400"
 					>
 						{t(`header.skills`)}
 					</a>
 					<a
 						href="#Projects"
-						className="text-base leading-6 text-neutral-300 duration-300 hover:text-blue-400"
+						className="text-base leading-6 text-neutral-600 dark:text-neutral-300 duration-300 hover:text-blue-400 dark:hover:text-blue-400"
 					>
 						{t(`header.projects`)}
 					</a>
 
 					<a
 						href="#Contact"
-						className="text-base leading-6 text-neutral-300 duration-300 hover:text-blue-400"
+						className="text-base leading-6 text-neutral-600 dark:text-neutral-300 duration-300 hover:text-blue-400 dark:hover:text-blue-400"
 					>
 						{t(`header.contact`)}
 					</a>
 				</div>
 
-				<div className="hidden lg:flex flex-1 items-center justify-end">
+				<div className="hidden lg:flex flex-1 items-center justify-end gap-x-4">
+					<ThemeToggle />
 					<LanguageChanger />
 				</div>
 
@@ -125,7 +139,7 @@ export default function Header() {
 					className="max-w-60"
 					closeButton={false}
 				>
-					<Drawer.Body className="bg-neutral-800 m-0 p-0 h-svh">
+					<Drawer.Body className="bg-white dark:bg-neutral-800 m-0 p-0 h-svh">
 						<div className="flex flex-col flex-1 h-full justify-between">
 							<div className="p-2 flex justify-end shadow">
 								<a
@@ -139,41 +153,42 @@ export default function Header() {
 								<a
 									href="#Home"
 									onClick={toggleDrawer}
-									className="text-lg leading-6 text-neutral-300"
+									className="text-lg leading-6 text-neutral-600 dark:text-neutral-300"
 								>
 									{t(`header.home`)}
 								</a>
 								<a
 									href="#About"
 									onClick={toggleDrawer}
-									className="text-lg leading-6 text-neutral-300"
+									className="text-lg leading-6 text-neutral-600 dark:text-neutral-300"
 								>
 									{t(`header.about`)}
 								</a>
 								<a
 									href="#Skills"
 									onClick={toggleDrawer}
-									className="text-lg leading-6 text-neutral-300"
+									className="text-lg leading-6 text-neutral-600 dark:text-neutral-300"
 								>
 									{t(`header.skills`)}
 								</a>
 								<a
 									href="#Projects"
 									onClick={toggleDrawer}
-									className="text-lg leading-6 text-neutral-300"
+									className="text-lg leading-6 text-neutral-600 dark:text-neutral-300"
 								>
 									{t(`header.projects`)}
 								</a>
 								<a
 									href="#Contact"
 									onClick={toggleDrawer}
-									className="text-lg leading-6 text-neutral-300"
+									className="text-lg leading-6 text-neutral-600 dark:text-neutral-300"
 								>
 									{t(`header.contact`)}
 								</a>
 							</div>
 
-							<div className="flex p-4 text-right justify-end shadow">
+							<div className="flex p-4 text-right justify-end shadow gap-x-4">
+								<ThemeToggle />
 								<LanguageChanger />
 							</div>
 						</div>

@@ -45,28 +45,28 @@ export default function LanguageChanger() {
 		<div className="flex flex-row items-center justify-end">
 			<div className="flex flex-row items-center justify-center gap-4">
 				<button
-					className="text-sm px-2 rounded-full text-neutral-300 duration-300 md:hover:text-blue-400"
+					className="text-sm px-2 rounded-full text-neutral-600 dark:text-neutral-300 duration-300 md:hover:text-blue-400"
 					onClick={() => handleChange("en")}
 					value={"en"}
 				>
 					EN
 				</button>
 				<button
-					className="text-sm px-2 rounded-full text-neutral-300 duration-300 md:hover:text-blue-400"
+					className="text-sm px-2 rounded-full text-neutral-600 dark:text-neutral-300 duration-300 md:hover:text-blue-400"
 					onClick={() => handleChange("de")}
 					value={"de"}
 				>
 					DE
 				</button>
 				<button
-					className="text-sm px-2 rounded-full text-neutral-300 duration-300 md:hover:text-blue-400"
+					className="text-sm px-2 rounded-full text-neutral-600 dark:text-neutral-300 duration-300 md:hover:text-blue-400"
 					onClick={() => handleChange("pt")}
 					value={"pt"}
 				>
 					PT
 				</button>
 				<button
-					className="text-sm px-2 rounded-full text-neutral-300 duration-300 md:hover:text-blue-400"
+					className="text-sm px-2 rounded-full text-neutral-600 dark:text-neutral-300 duration-300 md:hover:text-blue-400"
 					onClick={() => handleChange("es")}
 				>
 					ES

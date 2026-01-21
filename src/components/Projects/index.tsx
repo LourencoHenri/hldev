@@ -321,7 +321,7 @@ export default function Projects() {
 	return (
 		<div
 			id="Projects"
-			className="flex flex-col text-white items-center py-20 mx-8 gap-8"
+			className="flex flex-col text-neutral-900 dark:text-white items-center py-20 mx-8 gap-8 transition-colors duration-300"
 		>
 			<div className="flex flex-col items-center text-center gap-4 mb-4">
 				<PageHeader
@@ -348,7 +348,7 @@ export default function Projects() {
 			<div className=" flex flex-1 justify-between w-full border-t border-t-neutral-800 p-4 md:px-10">
 				<button
 					onClick={() => handlePreviousPage()}
-					className="rounded-md border border-transparent duration-300 cursor-pointer bg-transparent text-neutral-50"
+					className="rounded-md border border-transparent duration-300 cursor-pointer bg-transparent text-neutral-600 dark:text-neutral-50 hover:text-blue-400 dark:hover:text-blue-400"
 				>
 					<div className="flex gap-2 items-center justify-center">
 						<IoChevronBackOutline size={28} />
@@ -363,11 +363,10 @@ export default function Projects() {
 								key={number}
 								onClick={() => handlePageChange(number)}
 								disabled={currentPage === number}
-								className={`rounded-full border w-7 h-7 border-transparent duration-300 cursor-pointer ${
-									currentPage === number
-										? "bg-neutral-50 text-neutral-800"
-										: "bg-transparent text-neutral-50"
-								} `}
+								className={`rounded-full border w-7 h-7 border-transparent duration-300 cursor-pointer ${currentPage === number
+										? "bg-neutral-900 dark:bg-neutral-50 text-white dark:text-neutral-800"
+										: "bg-transparent text-neutral-600 dark:text-neutral-50"
+									} `}
 							>
 								<p className="text-base">{number}</p>
 							</button>
@@ -377,7 +376,7 @@ export default function Projects() {
 
 				<button
 					onClick={() => handleNextPage()}
-					className="rounded-md border border-transparent duration-300 cursor-pointer bg-transparent text-neutral-50 "
+					className="rounded-md border border-transparent duration-300 cursor-pointer bg-transparent text-neutral-600 dark:text-neutral-50 hover:text-blue-400 dark:hover:text-blue-400"
 				>
 					<div className="flex gap-2 items-center justify-center">
 						<p className="hidden md:flex lg:flex">Next</p>

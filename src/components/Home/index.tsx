@@ -8,7 +8,7 @@ export default function Home() {
 	const { t } = useTranslation();
 
 	return (
-		<div className="text-white h-svh min-h-96 w-full absolute flex justify-center items-center">
+		<div className="text-neutral-900 dark:text-white h-svh min-h-96 w-full absolute flex justify-center items-center transition-colors duration-300">
 			<div className="text-center flex flex-col">
 				<p className="text-xl md:text-2xl">{t(`home.hello`)}</p>
 				<p className="text-7xl md:text-9xl font-medium">{t(`home.name`)}</p>

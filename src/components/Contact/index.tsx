@@ -33,26 +33,26 @@ function Input({
 			<div className="flex flex-1 justify-center">
 				{element === "input" ? (
 					<div className="w-full">
-						<label className="block text-sm font-semibold leading-6 text-neutral-200">
+						<label className="block text-sm font-semibold leading-6 text-neutral-600 dark:text-neutral-200">
 							{name}
 						</label>
 						<input
 							type="text"
 							name={name}
 							id={name}
-							className="rounded-md mt-2 w-full bg-transparent p-2 text-neutral-200 shadow-sm border border-neutral-400"
+							className="rounded-md mt-2 w-full bg-transparent p-2 text-neutral-800 dark:text-neutral-200 shadow-sm border border-neutral-400 dark:border-neutral-600 focus:border-blue-400"
 						/>
 					</div>
 				) : (
 					<div className="w-full">
-						<label className="block text-sm font-semibold leading-6 text-neutral-200">
+						<label className="block text-sm font-semibold leading-6 text-neutral-600 dark:text-neutral-200">
 							{name}
 						</label>
 						<textarea
 							id={name}
 							name={name}
 							rows={4}
-							className="rounded-md mt-2 w-full bg-transparent p-2 text-neutral-200 shadow-sm border text-sm min-h-20 max-h-80 border-neutral-400"
+							className="rounded-md mt-2 w-full bg-transparent p-2 text-neutral-800 dark:text-neutral-200 shadow-sm border text-sm min-h-20 max-h-80 border-neutral-400 dark:border-neutral-600 focus:border-blue-400"
 						/>
 					</div>
 				)}
@@ -67,7 +67,7 @@ export default function Contact() {
 	return (
 		<div
 			id="Contact"
-			className="flex flex-col items-center py-20 mx-8 gap-8 text-white"
+			className="flex flex-col items-center py-20 mx-8 gap-8 text-neutral-900 dark:text-white transition-colors duration-300"
 		>
 			<PageHeader title={t(`contact.title`)} subtitle={t(`contact.subtitle`)} />
 

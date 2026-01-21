@@ -14,7 +14,7 @@
     "about": {
         "title": "Über",
         "subtitle": "Ein wenig über mich",
-        "content": "Mein Name ist Henrique Lourenço und ich arbeite als Softwareentwickler. Ich lebe in Santos, São Paulo, Brasilien. Mit über einem Jahr Erfahrung in der Softwareentwicklung habe ich mich auf Technologien wie React, React Native und Next.js spezialisiert und folge der Kanban-Methodik für agiles Projektmanagement. In diesem Zeitraum habe ich meine Fähigkeiten im Erstellen optimierter und effizienter Anwendungen verfeinert. Das Lebensmotto 'lebenslanges Lernen' umarmend, bin ich immer bestrebt, mein Wissen zu erwerben und zu verfeinern.",
+        "content": "Front-End Developer mit Schwerpunkt auf TypeScript und modernen JavaScript-Frameworks, mit fundierter Erfahrung in der Entwicklung skalierbarer Web- und Mobile-Anwendungen unter Verwendung von React, React Native, Next.js und Vue.js. Erfahren in der Erstellung leistungsstarker Benutzeroberflächen, der Implementierung responsiver und barrierefreier Interfaces sowie in der effektiven Zusammenarbeit in agilen, interdisziplinären Teams. Starker Fokus auf saubere Architektur, wartbaren Code und die Entwicklung nutzerzentrierter digitaler Erlebnisse.",
         "sentence": "Leben, lernen und sich jeden Tag verbessern"
     },
     "skills": {

@@ -20,6 +20,8 @@ const poppins = Poppins({
 	display: "swap",
 });
 
+import { ThemeProvider } from "../../providers/ThemeProvider";
+
 export default function RootLayout({
 	children,
 }: {
@@ -53,7 +55,16 @@ export default function RootLayout({
 				<meta name="twitter:image:width" content="1200" />
 				<meta name="twitter:image:height" content="600" />
 			</head>
-			<body className={poppins.className}>{children}</body>
+			<body className={poppins.className}>
+				<ThemeProvider
+					attribute="class"
+					defaultTheme="system"
+					enableSystem
+					disableTransitionOnChange
+				>
+					{children}
+				</ThemeProvider>
+			</body>
 		</html>
 	);
 }

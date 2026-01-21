@@ -39,7 +39,7 @@ export default async function Page({
 
 				<div
 					id="Home"
-					className="h-svh min-h-96 -z-10 border-b border-b-neutral-800"
+					className="h-svh min-h-96 -z-10 border-b border-b-neutral-100 dark:border-b-neutral-800"
 				>
 					<Three />
 				</div>

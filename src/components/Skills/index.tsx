@@ -10,10 +10,16 @@ import {
 	SiTypescript,
 	SiJavascript,
 	SiNextdotjs,
+	SiNodedotjs,
+	SiVuedotjs,
+	SiAngular,
+	SiRadixui,
 	SiGithub,
+	SiDocker,
 	SiFigma,
 	SiReact,
 	SiHtml5,
+	SiSass,
 	SiCss3,
 	SiGit,
 	SiMui,
@@ -42,9 +48,96 @@ export default function Skills() {
 		<>
 			<div
 				id="Skills"
-				className="flex flex-col items-center text-white p-20 mx-8 gap-8"
+				className="flex flex-col items-center text-neutral-900 dark:text-white p-20 mx-8 gap-8 transition-colors duration-300"
 			>
 				<PageHeader title={t(`skills.title`)} subtitle="These are my skills" />
+
+				{/* <div
+					className="flex flex-col w-full items-center gap-4"
+				>
+					<div
+						className="flex gap-4 w-full items-center"
+					>
+						<div className="border-b border-neutral-400 dark:border-neutral-600 flex flex-1 w-full" />
+						<span className="text-sm text-neutral-400  " >
+							Frameworks
+						</span>
+						<div className="border-b border-neutral-400 dark:border-neutral-600 flex flex-1 w-full" />
+					</div>
+					<div
+						className="flex flex-row gap-4"
+					>
+						<Skill name="React" icon={<SiReact size={48} />} />
+						<Skill name="Next.js" icon={<SiNextdotjs size={48} />} />
+					</div>
+				</div>
+
+				<div
+					className="flex flex-col w-full items-center gap-4"
+				>
+					<div
+						className="flex gap-4 w-full items-center"
+					>
+						<div className="border-b border-neutral-400 dark:border-neutral-600 flex flex-1 w-full" />
+						<span className="text-sm text-neutral-400  " >
+							Frameworks
+						</span>
+						<div className="border-b border-neutral-400 dark:border-neutral-600 flex flex-1 w-full" />
+					</div>
+					<div
+						className="flex flex-row gap-4"
+					>
+						<Skill name="MUI" icon={<SiMui size={48} />} />
+						<Skill
+							name="Styled Components"
+							icon={<SiStyledcomponents size={48} />}
+						/>
+						<Skill name="Tailwind" icon={<SiTailwindcss size={48} />} />
+					</div>
+				</div>
+
+				<div
+					className="flex flex-col w-full items-center gap-4"
+				>
+					<div
+						className="flex gap-4 w-full items-center"
+					>
+						<div className="border-b border-neutral-400 dark:border-neutral-600 flex flex-1 w-full" />
+						<span className="text-sm text-neutral-400  " >
+							Frameworks
+						</span>
+						<div className="border-b border-neutral-400 dark:border-neutral-600 flex flex-1 w-full" />
+					</div>
+					<div
+						className="flex flex-row gap-4"
+					>
+						<Skill name="Figma" icon={<SiFigma size={48} />} />
+						<Skill name="GitHub" icon={<SiGithub size={48} />} />
+						<Skill name="Git" icon={<SiGit size={48} />} />
+					</div>
+				</div>
+
+				<div
+					className="flex flex-col w-full items-center gap-4"
+				>
+					<div
+						className="flex gap-4 w-full items-center"
+					>
+						<div className="border-b border-neutral-400 dark:border-neutral-600 flex flex-1 w-full" />
+						<span className="text-sm text-neutral-400  " >
+							Frameworks
+						</span>
+						<div className="border-b border-neutral-400 dark:border-neutral-600 flex flex-1 w-full" />
+					</div>
+					<div
+						className="flex flex-row gap-4"
+					>
+						<Skill name="TypeScript" icon={<SiTypescript size={48} />} />
+						<Skill name="JavaScript" icon={<SiJavascript size={48} />} />
+						<Skill name="HTML5" icon={<SiHtml5 size={48} />} />
+						<Skill name="CSS3" icon={<SiCss3 size={48} />} />
+					</div>
+				</div> */}
 
 				<div className="flex md:hidden lg:hidden flex-col gap-8 w-30">
 					<SkillsClass
@@ -95,13 +188,18 @@ export default function Skills() {
 					/>
 				</div>
 
-				<div className="hidden md:flex lg:flex flex-row text-white h-40 gap-8">
+				<div className="hidden md:flex lg:flex flex-row text-neutral-900 dark:text-white h-40 gap-8">
 					<SkillsClass
 						title={t(`skills.frameworks`)}
 						content={
 							<>
 								<Skill name="React" icon={<SiReact size={48} />} />
 								<Skill name="Next.js" icon={<SiNextdotjs size={48} />} />
+								<Skill name="Vue.js" icon={<SiVuedotjs size={48} />} />
+								<Skill name="Angular" icon={<SiAngular size={48} />} />
+								<Skill name="Node.js" icon={<SiNodedotjs size={48} />} />
+
+
 							</>
 						}
 					/>
@@ -118,6 +216,8 @@ export default function Skills() {
 									icon={<SiStyledcomponents size={48} />}
 								/>
 								<Skill name="Tailwind" icon={<SiTailwindcss size={48} />} />
+								<Skill name="Sass" icon={<SiSass size={48} />} />
+								<Skill name="Radix UI" icon={<SiRadixui size={48} />} />
 							</>
 						}
 					/>
@@ -130,6 +230,7 @@ export default function Skills() {
 								<Skill name="Figma" icon={<SiFigma size={48} />} />
 								<Skill name="GitHub" icon={<SiGithub size={48} />} />
 								<Skill name="Git" icon={<SiGit size={48} />} />
+								<Skill name="Docker" icon={<SiDocker size={48} />} />
 							</>
 						}
 					/>

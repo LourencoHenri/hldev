@@ -1,5 +1,5 @@
 "use client";
 
-export default async function Loading() {
+export default function Loading() {
 	return <div>Carregando...</div>;
 }
