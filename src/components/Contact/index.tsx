@@ -67,7 +67,7 @@ export default function Contact() {
 	return (
 		<div
 			id="Contact"
-			className="flex flex-col items-center py-20 mx-8 gap-8 text-neutral-900 dark:text-white transition-colors duration-300"
+			className="flex flex-col items-center py-20 gap-8 text-neutral-900 dark:text-white transition-colors duration-300 max-w-7xl mx-auto px-8"
 		>
 			<PageHeader title={t(`contact.title`)} subtitle={t(`contact.subtitle`)} />
 

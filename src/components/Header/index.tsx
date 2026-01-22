@@ -77,7 +77,7 @@ export default function Header() {
 	return (
 		<header className="fixed left-0 top-0 w-full bg-white dark:bg-[rgb(15,15,15)] py-2 bg-opacity-85 dark:bg-opacity-85 shadow-sm z-50 transition-colors duration-300">
 			<div
-				className="mx-auto flex items-center justify-between lg:justify-between px-2 lg:p-2 lg:px-4 duration-1000"
+				className="mx-auto flex items-center justify-between lg:justify-between px-2 lg:p-2 lg:px-4 duration-1000 max-w-7xl"
 				aria-label="Global"
 			>
 				<a href="#Home" className="flex p-2 flex-1 lg:p-0">

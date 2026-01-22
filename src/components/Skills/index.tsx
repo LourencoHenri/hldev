@@ -48,7 +48,7 @@ export default function Skills() {
 		<>
 			<div
 				id="Skills"
-				className="flex flex-col items-center text-neutral-900 dark:text-white p-20 mx-8 gap-8 transition-colors duration-300"
+				className="flex flex-col items-center text-neutral-900 dark:text-white p-20 gap-8 transition-colors duration-300 max-w-7xl mx-auto px-8"
 			>
 				<PageHeader title={t(`skills.title`)} subtitle="These are my skills" />
 

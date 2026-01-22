@@ -32,17 +32,18 @@ export default async function Page({
 			locale={locale}
 			resources={resources}
 		>
-			<main className="flex min-h-screen flex-1 flex-col">
+			<main className="flex min-h-screen flex-1 flex-col overflow-x-hidden">
 				<Header />
 
-				<Home />
-
-				<div
-					id="Home"
-					className="h-svh min-h-96 -z-10 border-b border-b-neutral-100 dark:border-b-neutral-800"
-				>
-					<Three />
-				</div>
+				<section className="relative w-full">
+					<Home />
+					<div
+						id="Home"
+						className="h-svh min-h-96 -z-10 border-b border-b-neutral-100 dark:border-b-neutral-800"
+					>
+						<Three />
+					</div>
+				</section>
 
 				<About />
 

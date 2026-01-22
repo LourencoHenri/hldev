@@ -8,8 +8,8 @@ export default function Home() {
 	const { t } = useTranslation();
 
 	return (
-		<div className="text-neutral-900 dark:text-white h-svh min-h-96 w-full absolute flex justify-center items-center transition-colors duration-300">
-			<div className="text-center flex flex-col">
+		<div className="text-neutral-900 dark:text-white h-svh min-h-96 w-full absolute flex justify-center items-center transition-colors duration-300 z-10 pointer-events-none">
+			<div className="text-center flex flex-col pointer-events-auto max-w-7xl mx-auto px-4">
 				<p className="text-xl md:text-2xl">{t(`home.hello`)}</p>
 				<p className="text-7xl md:text-9xl font-medium">{t(`home.name`)}</p>
 				<p className="text-2xl md:text-3xl font-medium mt-2 md:mt-4">

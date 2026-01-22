@@ -10,7 +10,7 @@ export default function About() {
 	const { t } = useTranslation();
 
 	return (
-		<div id="About" className="flex flex-col pb-20 pt-40 mx-8 gap-40 transition-colors duration-300">
+		<div id="About" className="flex flex-col pb-20 pt-40 gap-40 transition-colors duration-300 max-w-7xl mx-auto px-8">
 			<div className="flex text-neutral-900 dark:text-white flex-col items-center text-center gap-4">
 				<PageHeader title={t(`about.title`)} subtitle={t(`about.subtitle`)} />
 
