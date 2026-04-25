@@ -43,7 +43,7 @@ import { useState } from "react";
 export default function Projects() {
 	const { t } = useTranslation();
 
-	const iconSize = 32;
+	const iconSize = 20;
 
 	const technologies = {
 		react: {
@@ -107,7 +107,7 @@ export default function Projects() {
 			icon: <SiPrisma size={iconSize} />,
 		},
 		fastify: {
-			name: "Prisma",
+			name: "Fastify",
 			icon: <SiFastify size={iconSize} />,
 		},
 	};
@@ -116,11 +116,8 @@ export default function Projects() {
 		react,
 		nextJs,
 		figma,
-		gitHub,
-		git,
 		mui,
 		styledComponents,
-		tailwind,
 		typeScript,
 		javaScript,
 		html,
@@ -331,7 +328,7 @@ export default function Projects() {
 				<p className="text-lg">{t(`projects.instruction`)}</p>
 			</div>
 
-			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:mx-8 gap-8 ">
+			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-6">
 				{currentProjects.map((project) => (
 					<ProjectCard
 						key={project.id}
@@ -345,43 +342,42 @@ export default function Projects() {
 				))}
 			</div>
 
-			<div className=" flex flex-1 justify-between w-full border-t border-t-neutral-800 p-4 md:px-10">
+			<div className="flex items-center justify-between w-full pt-6 border-t border-neutral-200 dark:border-neutral-700">
 				<button
-					onClick={() => handlePreviousPage()}
-					className="rounded-md border border-transparent duration-300 cursor-pointer bg-transparent text-neutral-600 dark:text-neutral-50 hover:text-blue-400 dark:hover:text-blue-400"
+					onClick={handlePreviousPage}
+					disabled={currentPage === 1}
+					className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium text-neutral-600 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-neutral-50 hover:bg-neutral-100 dark:hover:bg-neutral-800 disabled:opacity-30 disabled:cursor-not-allowed disabled:hover:bg-transparent disabled:hover:text-neutral-600 dark:disabled:hover:text-neutral-300 transition-all duration-200"
 				>
-					<div className="flex gap-2 items-center justify-center">
-						<IoChevronBackOutline size={28} />
-						<p className="hidden md:flex lg:flex">Previous</p>
-					</div>
+					<IoChevronBackOutline size={18} />
+					<span className="hidden sm:inline">Previous</span>
 				</button>
 
-				<div className="justify-center flex flex-row gap-6">
+				<div className="flex items-center gap-1">
 					{Array.from({ length: totalPages }, (_, index) => index + 1).map(
 						(number) => (
 							<button
 								key={number}
 								onClick={() => handlePageChange(number)}
 								disabled={currentPage === number}
-								className={`rounded-full border w-7 h-7 border-transparent duration-300 cursor-pointer ${currentPage === number
-									? "bg-neutral-900 dark:bg-neutral-50 text-white dark:text-neutral-800"
-									: "bg-transparent text-neutral-600 dark:text-neutral-50"
-									} `}
+								className={`w-9 h-9 rounded-lg text-sm font-medium transition-all duration-200 ${
+									currentPage === number
+										? "bg-neutral-900 dark:bg-neutral-50 text-white dark:text-neutral-900 shadow-sm cursor-default"
+										: "text-neutral-600 dark:text-neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-800 hover:text-neutral-900 dark:hover:text-neutral-50"
+								}`}
 							>
-								<p className="text-base">{number}</p>
+								{number}
 							</button>
 						)
 					)}
 				</div>
 
 				<button
-					onClick={() => handleNextPage()}
-					className="rounded-md border border-transparent duration-300 cursor-pointer bg-transparent text-neutral-600 dark:text-neutral-50 hover:text-blue-400 dark:hover:text-blue-400"
+					onClick={handleNextPage}
+					disabled={currentPage === totalPages}
+					className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium text-neutral-600 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-neutral-50 hover:bg-neutral-100 dark:hover:bg-neutral-800 disabled:opacity-30 disabled:cursor-not-allowed disabled:hover:bg-transparent disabled:hover:text-neutral-600 dark:disabled:hover:text-neutral-300 transition-all duration-200"
 				>
-					<div className="flex gap-2 items-center justify-center">
-						<p className="hidden md:flex lg:flex">Next</p>
-						<IoChevronForwardOutline size={28} />
-					</div>
+					<span className="hidden sm:inline">Next</span>
+					<IoChevronForwardOutline size={18} />
 				</button>
 			</div>
 		</div>
