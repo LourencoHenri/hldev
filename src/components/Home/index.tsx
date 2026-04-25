@@ -2,7 +2,8 @@
 
 import { useTranslation } from "react-i18next";
 import PageHeader from "../PageHeader";
-import { SiGithub, SiLinkedin } from "react-icons/si";
+import { SiGithub } from "react-icons/si";
+import { FaLinkedin } from "react-icons/fa6";
 
 export default function Home() {
 	const { t } = useTranslation();
@@ -28,7 +29,7 @@ export default function Home() {
 						target="_blank"
 						className="flex flex-row gap-4 p-1 rounded justify-center items-center cursor-pointer duration-300 hover:text-blue-400"
 					>
-						<SiLinkedin size={28} />
+						<FaLinkedin size={28} />
 					</a>
 				</div>
 			</div>

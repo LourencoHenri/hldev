@@ -1,4 +1,5 @@
-import { SiGithub, SiInstagram, SiLinkedin } from "react-icons/si";
+import { SiGithub, SiInstagram } from "react-icons/si";
+import { FaLinkedin } from "react-icons/fa6";
 
 export default function SocialMedia() {
 	return (
@@ -19,7 +20,7 @@ export default function SocialMedia() {
 			</a>
 			<a href="https://www.linkedin.com/in/henrique-lourenco/" target="_blank" className="hover:text-blue-600 duration-300">
 				<button>
-					<SiLinkedin
+					<FaLinkedin
 						size={32}
 					/>
 				</button>

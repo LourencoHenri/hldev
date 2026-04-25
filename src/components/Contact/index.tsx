@@ -1,6 +1,7 @@
 "use client"
 
-import { SiGithub, SiLinkedin } from "react-icons/si";
+import { SiGithub } from "react-icons/si";
+import { FaLinkedin } from "react-icons/fa6";
 import ProjectCard from "../ProjectCard";
 import {
 	IoChevronDownOutline,
@@ -91,7 +92,7 @@ export default function Contact() {
 					target="_blank"
 					className="flex flex-row gap-4 justify-center items-center cursor-pointer duration-300 hover:text-blue-400"
 				>
-					<SiLinkedin size={32} />
+					<FaLinkedin size={32} />
 					Henrique Lourenço
 				</a>
 			</div>
@@ -116,7 +117,7 @@ export default function Contact() {
 						target="_blank"
 						className="flex flex-row gap-4 justify-center items-center cursor-pointer duration-300 hover:text-blue-400"
 					>
-						<SiLinkedin size={32} />
+						<FaLinkedin size={32} />
 						Henrique Lourenço
 					</a>
 				</div>
