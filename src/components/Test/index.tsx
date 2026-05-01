@@ -13,7 +13,7 @@ import {
 	SiFigma,
 	SiReact,
 	SiHtml5,
-	SiCss3,
+	SiCss,
 	SiGit,
 	SiMui,
 } from "react-icons/si";
@@ -72,7 +72,7 @@ export default function Test() {
 		},
 		css: {
 			name: "CSS3",
-			icon: <SiCss3 size={iconSize} />,
+			icon: <SiCss size={iconSize} />,
 		},
 	};
 

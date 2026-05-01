@@ -30,7 +30,7 @@ import {
 	SiFigma,
 	SiReact,
 	SiHtml5,
-	SiCss3,
+	SiCss,
 	SiGit,
 	SiMui,
 	SiNodedotjs,
@@ -92,7 +92,7 @@ export default function Projects() {
 		},
 		css: {
 			name: "CSS3",
-			icon: <SiCss3 size={iconSize} />,
+			icon: <SiCss size={iconSize} />,
 		},
 		node: {
 			name: "Node.js",

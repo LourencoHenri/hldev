@@ -20,7 +20,7 @@ import {
 	SiReact,
 	SiHtml5,
 	SiSass,
-	SiCss3,
+	SiCss,
 	SiGit,
 	SiMui,
 } from "react-icons/si";
@@ -135,7 +135,7 @@ export default function Skills() {
 						<Skill name="TypeScript" icon={<SiTypescript size={48} />} />
 						<Skill name="JavaScript" icon={<SiJavascript size={48} />} />
 						<Skill name="HTML5" icon={<SiHtml5 size={48} />} />
-						<Skill name="CSS3" icon={<SiCss3 size={48} />} />
+						<Skill name="CSS3" icon={<SiCss size={48} />} />
 					</div>
 				</div> */}
 
@@ -182,7 +182,7 @@ export default function Skills() {
 								<Skill name="TypeScript" icon={<SiTypescript size={48} />} />
 								<Skill name="JavaScript" icon={<SiJavascript size={48} />} />
 								<Skill name="HTML5" icon={<SiHtml5 size={48} />} />
-								<Skill name="CSS3" icon={<SiCss3 size={48} />} />
+								<Skill name="CSS3" icon={<SiCss size={48} />} />
 							</>
 						}
 					/>
@@ -244,7 +244,7 @@ export default function Skills() {
 								<Skill name="TypeScript" icon={<SiTypescript size={48} />} />
 								<Skill name="JavaScript" icon={<SiJavascript size={48} />} />
 								<Skill name="HTML5" icon={<SiHtml5 size={48} />} />
-								<Skill name="CSS3" icon={<SiCss3 size={48} />} />
+								<Skill name="CSS3" icon={<SiCss size={48} />} />
 							</>
 						}
 					/>
