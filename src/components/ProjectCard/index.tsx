@@ -1,78 +1,120 @@
+"use client";
+
 import { SiGithub } from "react-icons/si";
+import { HiArrowUpRight } from "react-icons/hi2";
 import { useTranslation } from "react-i18next";
-import { TechnologyProps } from "../Projects";
+
+import { Project } from "@/src/types/project";
+import { TECHNOLOGIES_MAP } from "@/src/lib/technologies";
 
 interface ProjectCardProps {
-	name: string;
-	description?: string;
-	technologies: TechnologyProps[];
-	gitHubUrl: string;
-	siteUrl: string;
-	image: string;
+  project: Project;
 }
 
-export default function ProjectCard({
-	name,
-	technologies,
-	siteUrl,
-	gitHubUrl,
-	image,
-}: ProjectCardProps) {
-	const { t } = useTranslation();
+export default function ProjectCard({ project }: ProjectCardProps) {
+  const { t } = useTranslation();
 
-	return (
-		<div
-			className="group flex flex-col h-full rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-cover bg-center"
-			style={{ backgroundImage: `url(${image})` }}
-		>
-			<div className="flex flex-col h-full p-5 gap-5 bg-white/95 dark:bg-neutral-800/95 transition-colors duration-300">
-				<div className="flex flex-col gap-2 flex-1">
-					<h3 className="text-base font-semibold leading-snug text-neutral-900 dark:text-neutral-50">
-						{t(`portfolio.${name}.title`)}
-					</h3>
+  const translatedTitle = t(`portfolio.${project.name}.title`, {
+    defaultValue: "",
+  });
+  const translatedDescription = t(`portfolio.${project.name}.description`, {
+    defaultValue: "",
+  });
 
-					<p className="text-sm leading-relaxed text-neutral-500 dark:text-neutral-400 line-clamp-3">
-						{t(`portfolio.${name}.description`)}
-					</p>
-				</div>
+  const title = project.title || translatedTitle || project.name;
+  const description = translatedDescription || project.description;
 
-				<div className="flex flex-wrap gap-2.5">
-					{technologies &&
-						technologies.map((technology) => (
-							<div
-								key={technology.name}
-								title={technology.name}
-								className="text-neutral-400 dark:text-neutral-500 hover:text-neutral-800 dark:hover:text-neutral-200 transition-colors duration-200"
-							>
-								{technology.icon}
-							</div>
-						))}
-				</div>
+  return (
+    <article className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-neutral-200/80 bg-white shadow-[0_1px_2px_rgba(15,15,15,0.04)] transition-all duration-500 hover:-translate-y-1 hover:border-neutral-300 hover:shadow-[0_24px_60px_-20px_rgba(15,15,15,0.18)] dark:border-neutral-800 dark:bg-neutral-900/60 dark:hover:border-neutral-700 dark:hover:shadow-[0_24px_60px_-20px_rgba(0,0,0,0.6)]">
+      <div className="relative aspect-[16/10] overflow-hidden bg-neutral-100 dark:bg-neutral-800">
+        {project.image ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            src={project.image}
+            alt={`${title} — project preview`}
+            loading="lazy"
+            className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+          />
+        ) : (
+          <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-neutral-100 to-neutral-200 dark:from-neutral-800 dark:to-neutral-900" />
+        )}
 
-				<div className="flex flex-row justify-between items-center pt-4 border-t border-neutral-200 dark:border-neutral-700">
-					{siteUrl ? (
-						<a
-							href={siteUrl}
-							target="_blank"
-							rel="noopener noreferrer"
-							className="text-sm font-medium px-3 py-1.5 rounded-md border border-neutral-200 dark:border-neutral-600 text-neutral-700 dark:text-neutral-200 hover:border-blue-400 hover:text-blue-500 dark:hover:border-blue-400 dark:hover:text-blue-400 transition-all duration-200"
-						>
-							{t(`projects.card.access`)}
-						</a>
-					) : (
-						<span />
-					)}
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
 
-					<a
-						className="p-2 rounded-full text-neutral-500 dark:text-neutral-400 hover:bg-neutral-900 dark:hover:bg-neutral-100 hover:text-white dark:hover:text-neutral-800 transition-all duration-200"
-						target="_blank"
-						rel="noopener noreferrer"
-						href={gitHubUrl}
-					>
-						<SiGithub size={20} />
-					</a>
-				</div>
-			</div>
-		</div>
-	);
+      </div>
+
+      <div className="flex flex-1 flex-col gap-5 p-6">
+        <div className="flex flex-1 flex-col gap-2">
+          <h3 className="text-lg font-semibold leading-snug tracking-tight text-neutral-900 dark:text-neutral-50">
+            {title}
+          </h3>
+          <p className="text-sm leading-relaxed text-neutral-500 dark:text-neutral-400 line-clamp-3">
+            {description}
+          </p>
+        </div>
+
+        {project.technologies.length > 0 && (
+          <ul className="flex flex-wrap gap-4">
+            {project.technologies.map((key) => {
+              const tech = TECHNOLOGIES_MAP[key];
+              if (!tech) return null;
+              return (
+                <li
+                  key={key}
+                  className="text-neutral-400 dark:text-neutral-500 hover:text-neutral-800 dark:hover:text-neutral-200 transition-colors duration-200"
+                >
+                  <span
+                    className="text-neutral-500 dark:text-neutral-400"
+                    aria-hidden
+                  >
+                    {tech.icon}
+                  </span>
+                </li>
+              );
+            })}
+          </ul>
+        )}
+
+        <div className="flex items-center justify-between border-t border-neutral-100 pt-4 dark:border-neutral-800">
+          {project.siteUrl ? (
+            <a
+              href={project.siteUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`${t("projects.card.access", {
+                defaultValue: "View live",
+              })} — ${title}`}
+              className="inline-flex items-center gap-1.5 text-sm font-medium text-neutral-900 transition-colors duration-200 hover:text-blue-500 dark:text-neutral-100 dark:hover:text-blue-400"
+            >
+              {t("projects.card.access", { defaultValue: "View live" })}
+              <HiArrowUpRight
+                size={14}
+                className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+              />
+            </a>
+          ) : (
+            <span className="text-xs uppercase tracking-widest text-neutral-400 dark:text-neutral-600">
+              {t("projects.card.repository", {
+                defaultValue: "Source available",
+              })}
+            </span>
+          )}
+
+          {project.gitHubUrl && (
+            <a
+              href={project.gitHubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`${t("projects.card.github", {
+                defaultValue: "Open repository",
+              })} — ${title}`}
+              className="inline-flex h-8 w-8 items-center justify-center rounded-full text-neutral-500 transition-all duration-200 hover:bg-neutral-900 hover:text-white dark:text-neutral-400 dark:hover:bg-neutral-100 dark:hover:text-neutral-900"
+            >
+              <SiGithub size={16} />
+            </a>
+          )}
+        </div>
+      </div>
+    </article>
+  );
 }

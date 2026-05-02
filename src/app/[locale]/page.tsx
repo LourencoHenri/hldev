@@ -10,6 +10,7 @@ import Skills from "@/src/components/Skills";
 import Projects from "@/src/components/Projects";
 import Contact from "@/src/components/Contact";
 import Home from "@/src/components/Home";
+import Footer from "@/src/components/Footer";
 
 export interface PageProps {
 	params: {
@@ -24,7 +25,7 @@ export default async function Page({
 }) {
 	const i18nNamespaces = [""];
 
-	const { t, resources } = await initTranslations(locale, i18nNamespaces);
+	const { resources } = await initTranslations(locale, i18nNamespaces);
 
 	return (
 		<TranslationsProvider
@@ -38,8 +39,8 @@ export default async function Page({
 				<section className="relative w-full">
 					<Home />
 					<div
-						id="Home"
-						className="h-svh min-h-96 -z-10 border-b border-b-neutral-100 dark:border-b-neutral-800"
+						aria-hidden
+						className="-z-10 h-svh min-h-96 border-b border-b-neutral-100 dark:border-b-neutral-800"
 					>
 						<Three />
 					</div>
@@ -52,6 +53,8 @@ export default async function Page({
 				<Projects />
 
 				<Contact />
+
+				<Footer />
 			</main>
 		</TranslationsProvider>
 	);

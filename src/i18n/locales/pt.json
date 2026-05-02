@@ -4,101 +4,153 @@
         "about": "Sobre",
         "skills": "Habilidades",
         "projects": "Projetos",
-        "contact": "Contato"
+        "contact": "Contato",
+        "resume": "Currículo",
+        "menu": "Menu",
+        "openMenu": "Abrir menu",
+        "closeMenu": "Fechar menu",
+        "aria": "Navegação principal"
     },
     "home": {
         "name": "Henrique",
-        "hello": "Olá, meu nome é",
-        "role": "Sou Desenvolvedor de Software"
+        "hello": "Software Developer",
+        "role": "Construindo interfaces web e mobile escaláveis com React, React Native, Next.js e Vue.js — com foco em TypeScript, performance e design acessível.",
+        "availability": "Disponível para novas oportunidades",
+        "ctaPrimary": "Ver projetos",
+        "ctaSecondary": "Falar comigo",
+        "resumeEn": "Currículo — EN",
+        "resumeDe": "Lebenslauf — DE"
     },
     "about": {
+        "eyebrow": "Sobre",
         "title": "Sobre",
-        "subtitle": "Um pouco sobre mim",
-        "content": "Desenvolvedor Front-End especializado em TypeScript e frameworks modernos de JavaScript, com sólida experiência no desenvolvimento de aplicações web e mobile escaláveis utilizando React, React Native, Next.js e Vue.js. Experiência na criação de interfaces de alto desempenho, implementação de interfaces responsivas e acessíveis, e colaboração eficaz em equipes ágeis e multidisciplinares. Forte foco em arquitetura limpa, código de fácil manutenção e entrega de experiências digitais centradas no usuário.",
-        "sentence": "Vivendo, aprendendo e evoluindo a cada dia"
+        "subtitle": "Engenharia front-end com cuidado pelos detalhes.",
+        "content": "Desenvolvedor Front-End especializado em TypeScript e frameworks modernos de JavaScript, com sólida experiência no desenvolvimento de aplicações web e mobile escaláveis utilizando React, React Native, Next.js e Vue.js. Foco em interfaces de alto desempenho, UI responsiva e acessível, arquitetura limpa, código manutenível e experiências digitais centradas no usuário.",
+        "secondary": "Baseado em Santos, Brasil — aberto a relocation. Experiência em plataformas fintech de banking digital e criptomoedas, criação de componentes de UI reutilizáveis com Storybook e colaboração próxima com times de backend e produto em ambientes ágeis.",
+        "resumeEn": "Baixar currículo — Inglês",
+        "resumeDe": "Currículo — Alemão",
+        "stats": {
+            "role": "Cargo",
+            "roleValue": "Front-End Developer",
+            "location": "Localização",
+            "locationValue": "Santos, Brasil — aberto a relocation",
+            "focus": "Foco",
+            "focusValue": "React · TypeScript · UI moderna"
+        }
     },
     "skills": {
+        "eyebrow": "Toolkit",
         "title": "Habilidades",
+        "subtitle": "Ferramentas que utilizo para construir interfaces modernas.",
         "frameworks": "Frameworks",
-        "styles": "Estilos",
-        "systemAndPlatforms": "Sistemas e Plataformas",
+        "styles": "Estilização",
+        "systemAndPlatforms": "Ferramentas e Plataformas",
         "languages": "Linguagens"
     },
     "projects": {
+        "eyebrow": "Trabalhos selecionados",
         "title": "Projetos",
-        "subtitle": "Minha coleção de projetos",
-        "instruction": "Pressione acessar para visitar a página do projeto ou o Ícone do GitHub para acessar o projeto no meu repositório.",
+        "subtitle": "Uma seleção de trabalhos recentes.",
+        "instruction": "Uma seleção de projetos explorando UI de produto, design systems e experimentos full-stack. Acesse a demo ou veja o código no GitHub.",
+        "empty": "Nenhum projeto disponível no momento.",
         "card": {
-            "access": "Acessar"
+            "access": "Ver projeto",
+            "github": "Abrir repositório",
+            "featured": "Destaque",
+            "repository": "Código disponível"
+        },
+        "filter": {
+            "label": "Filtrar projetos",
+            "all": "Todos",
+            "featured": "Destaques"
+        },
+        "pagination": {
+            "label": "Paginação dos projetos",
+            "previous": "Anterior",
+            "next": "Próximo"
         }
     },
     "contact": {
+        "eyebrow": "Contato",
         "title": "Contato",
-        "subtitle": "Entre em contato comigo",
+        "subtitle": "Vamos construir algo juntos.",
+        "intro": "Disponível para oportunidades em front-end, projetos freelance e colaborações. Costumo responder em até um dia útil.",
+        "cta": "Iniciar uma conversa",
+        "channels": {
+            "email": "E-mail"
+        },
         "form": {
             "name": "Nome",
             "company": "Empresa",
             "email": "E-mail",
             "message": "Como posso ajudar?",
-            "submit": "Vamos Conversar"
+            "submit": "Vamos conversar"
         }
+    },
+    "footer": {
+        "eyebrow": "Henrique Lourenço",
+        "tagline": "Desenvolvedor Front-End criando interfaces performáticas e bem pensadas com React, TypeScript e ferramentas modernas da web.",
+        "connect": "Conecte-se",
+        "resume": "Currículo",
+        "rights": "Todos os direitos reservados.",
+        "builtWith": "Construído com Next.js, TypeScript e Tailwind CSS."
     },
     "portfolio": {
         "weatherApp": {
-            "title": "Aplicativo de Tempo",
-            "description": "Utilização de API para fornecer informações meteorológicas em tempo real."
+            "title": "Weather App",
+            "description": "Informações meteorológicas em tempo real consumindo API pública, com interface responsiva."
         },
         "pomodoroTimer": {
             "title": "Pomodoro Timer",
-            "description": "Aplicativo de Pomodoro Timer que auxilia na gestão do tempo e aumento da produtividade."
+            "description": "Aplicativo de foco e gestão de tempo aplicando a técnica Pomodoro com UI refinada."
         },
         "toggleThemeMui": {
-            "title": "Alternar Tema - MUI",
-            "description": "O projeto Toggle Theme MUI permite alternar entre temas claro e escuro em uma aplicação web."
+            "title": "Toggle Theme — MUI",
+            "description": "Projeto demonstrando alternância fluida entre temas claro e escuro com Material UI."
         },
         "feed": {
             "title": "Feed",
-            "description": "Simula um sistema de feed, permitindo a exibição de posts e comentários organizados e interativos."
+            "description": "Protótipo de feed social com posts e comentários organizados e interativos."
         },
         "toDoList": {
             "title": "Lista de Tarefas",
-            "description": "Aplicativo de lista de tarefas que permite aos usuários criar, organizar e gerenciar suas tarefas de maneira eficiente e conveniente."
+            "description": "Gerenciador de tarefas para criar, organizar e acompanhar atividades diárias."
         },
         "calculator": {
             "title": "Calculadora",
-            "description": "O projeto oferece uma calculadora com modos normal e científico, apresentando uma interface intuitiva."
+            "description": "Calculadora nos modos padrão e científico com interface intuitiva."
         },
         "shop": {
-            "title": "Loja",
-            "description": "O projeto incorpora funcionalidades de comércio eletrônico, facilitando o processamento de pedidos e transações de pagamento."
+            "title": "Shop",
+            "description": "Interface de e-commerce com fluxo de pedidos e pagamento."
         },
         "coffeeShop": {
-            "title": "Cafeteria",
-            "description": "O projeto inclui recursos relacionados a cafeterias, tornando fácil lidar com pedidos e processar pagamentos de forma eficiente."
+            "title": "Coffee Shop",
+            "description": "Vitrine temática de cafeteria com checkout e gestão de pedidos."
         },
         "gymMobileApp": {
-            "title": "Gym - Mobile",
+            "title": "Gym — Mobile",
             "description": "Aplicativo de treino prototipado no Figma e desenvolvido em React Native."
         },
         "gymApi": {
-            "title": "Gym - API",
-            "description": "API para aplicativo de treino desenvolvida em Node.js, utilizando Prisma e Docker."
+            "title": "Gym — API",
+            "description": "API do app de treino construída com Node.js, Prisma e Docker."
         },
         "gymPassSystem": {
             "title": "GymPass System",
-            "description": "API desenvolvida em Node.js, utilizando Prisma e Docker."
+            "description": "Serviço backend em Node.js com Prisma e Docker para uma plataforma gym-pass."
         },
         "findAFriend": {
             "title": "Find a Friend",
-            "description": "API para sistema de busca de animais, desenvolvida em Node.js, utilizando Fastify."
+            "description": "API de adoção de pets construída com Node.js, Prisma, Docker e Fastify."
         },
         "dailyDietApi": {
             "title": "Daily Diet",
-            "description": "API para sistema de controle nutricional, desenvolvida em Node.js, utilizando Prisma e Docker."
+            "description": "API para controle nutricional desenvolvida em Node.js com Fastify."
         },
         "saasApi": {
             "title": "SaaS System API",
-            "description": "API desenvolvida em Node.js, utilizando Prisma e Docker."
+            "description": "API multi-tenant para SaaS em Node.js, Prisma e Docker."
         }
     }
 }

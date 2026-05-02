@@ -1,200 +1,138 @@
 "use client";
 
-import { Fragment, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import { useTheme } from "next-themes";
+import { useTranslation } from "react-i18next";
+import { Drawer } from "rsuite";
+import { IoClose, IoMenu } from "react-icons/io5";
 
 import { LogoWhite } from "../../assets/logo/LogoWhite";
 import { LogoBlack } from "../../assets/logo/LogoBlack";
-import { useTheme } from "next-themes";
-
-import { Popover, Transition } from "@headlessui/react";
-import { Drawer } from "rsuite";
-import Image from "next/image";
-
-import germanyFlag from "../../assets/flags/germany.png";
-import brazilFlag from "../../assets/flags/brazil.png";
-import spainFlag from "../../assets/flags/spain.png";
-import usaFlag from "../../assets/flags/usa.png";
-
-import { IoClose, IoMenu } from "react-icons/io5";
-
-type LanguageProps = "en-US" | "es-ES" | "pt-BR" | "de-GE";
-
-interface LanguagesProps {
-	id: LanguageProps;
-	name: string;
-	image: any;
-}
-
-import { useTranslation } from "react-i18next";
 import LanguageChanger from "../LanguageChanger";
 import ThemeToggle from "../ThemeToggle";
 
+const NAV_ITEMS = [
+  { id: "Home", key: "home" },
+  { id: "About", key: "about" },
+  { id: "Skills", key: "skills" },
+  { id: "Projects", key: "projects" },
+  { id: "Contact", key: "contact" },
+] as const;
+
 export default function Header() {
-	const { t, i18n } = useTranslation();
-	const { theme } = useTheme();
-	const [mounted, setMounted] = useState(false);
+  const { t } = useTranslation();
+  const { theme, resolvedTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+  const [openDrawer, setOpenDrawer] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
-	useEffect(() => {
-		setMounted(true);
-	}, []);
+  useEffect(() => {
+    setMounted(true);
 
-	const [openDrawer, setOpenDrawer] = useState(false);
+    const onScroll = () => setScrolled(window.scrollY > 16);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
-	const [integratedProjectsAccordion, setIntegratedProjectsAccordion] =
-		useState(false);
+  const isDark = mounted && (resolvedTheme === "dark" || theme === "dark");
 
-	function toggleIntegratedProjectsAccordion() {
-		setIntegratedProjectsAccordion(!integratedProjectsAccordion);
-	}
+  return (
+    <header
+      className={`fixed left-0 top-0 z-50 w-full transition-all duration-300 ${
+        scrolled
+          ? "border-b border-neutral-200/60 bg-white/80 backdrop-blur-md dark:border-neutral-800/60 dark:bg-neutral-950/70"
+          : "border-b border-transparent bg-transparent"
+      }`}
+    >
+      <nav
+        aria-label={t("header.aria", { defaultValue: "Primary navigation" })}
+        className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 lg:px-6"
+      >
+        <a
+          href="#Home"
+          aria-label="Henrique Lourenço — back to top"
+          className="flex shrink-0 items-center"
+        >
+          {mounted ? isDark ? <LogoWhite /> : <LogoBlack /> : <LogoBlack />}
+        </a>
 
-	function toggleDrawer() {
-		setOpenDrawer(!openDrawer);
-	}
+        <ul className="hidden items-center gap-x-8 lg:flex w-full justify-center">
+          {NAV_ITEMS.map((item) => (
+            <li key={item.id}>
+              <a
+                href={`#${item.id}`}
+                className="text-md font-normal text-neutral-600 transition-colors duration-200 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-white"
+              >
+                {t(`header.${item.key}`)}
+              </a>
+            </li>
+          ))}
+        </ul>
 
-	const languages: LanguagesProps[] = [
-		{
-			id: "en-US",
-			name: "english",
-			image: usaFlag,
-		},
-		{
-			id: "es-ES",
-			name: "spanish",
-			image: spainFlag,
-		},
-		{
-			id: "pt-BR",
-			name: "portuguese",
-			image: brazilFlag,
-		},
-		{
-			id: "de-GE",
-			name: "german",
-			image: germanyFlag,
-		},
-	];
+        <div className="hidden items-center gap-2 lg:flex">
+          <LanguageChanger />
+		  <div
+		  	className="border-r border-neutral-600 h-6"
+		  />
+          <ThemeToggle />
+        </div>
 
-	return (
-		<header className="fixed left-0 top-0 w-full bg-white dark:bg-[rgb(15,15,15)] py-2 bg-opacity-85 dark:bg-opacity-85 shadow-sm z-50 transition-colors duration-300">
-			<div
-				className="mx-auto flex items-center justify-between lg:justify-between px-2 lg:p-2 lg:px-4 duration-1000 max-w-7xl"
-				aria-label="Global"
-			>
-				<a href="#Home" className="flex p-2 flex-1 lg:p-0">
-					{mounted && (theme === "dark" || theme === "system") ? (
-						<LogoWhite />
-					) : (
-						<LogoBlack />
-					)}
-				</a>
+        <button
+          type="button"
+          onClick={() => setOpenDrawer(true)}
+          aria-label={t("header.openMenu", { defaultValue: "Open menu" })}
+          className="rounded-full p-2 text-neutral-700 transition-colors duration-200 hover:bg-neutral-100 lg:hidden dark:text-neutral-200 dark:hover:bg-neutral-800"
+        >
+          <IoMenu size={26} />
+        </button>
 
-				<div className="hidden lg:flex flex-1 gap-x-8 justify-center">
-					<a
-						href="#Home"
-						className="text-base leading-6 text-neutral-600 dark:text-neutral-300 hover:text-blue-400 dark:hover:text-blue-400"
-					>
-						{t(`header.home`)}
-					</a>
-					<a
-						href="#About"
-						className="text-base leading-6 text-neutral-600 dark:text-neutral-300 duration-300 hover:text-blue-400 dark:hover:text-blue-400"
-					>
-						{t(`header.about`)}
-					</a>
-					<a
-						href="#Skills"
-						className="text-base leading-6 text-neutral-600 dark:text-neutral-300 duration-300 hover:text-blue-400 dark:hover:text-blue-400"
-					>
-						{t(`header.skills`)}
-					</a>
-					<a
-						href="#Projects"
-						className="text-base leading-6 text-neutral-600 dark:text-neutral-300 duration-300 hover:text-blue-400 dark:hover:text-blue-400"
-					>
-						{t(`header.projects`)}
-					</a>
+        <Drawer
+          open={openDrawer}
+          onClose={() => setOpenDrawer(false)}
+          className="max-w-72"
+          closeButton={false}
+        >
+          <Drawer.Body className="m-0 h-svh bg-white p-0 dark:bg-neutral-950">
+            <div className="flex h-full flex-col">
+              <div className="flex items-center justify-between border-b border-neutral-200 p-4 dark:border-neutral-800">
+                <span className="text-xs font-medium uppercase tracking-[0.2em] text-neutral-500 dark:text-neutral-400">
+                  {t("header.menu", { defaultValue: "Menu" })}
+                </span>
+                <button
+                  type="button"
+                  onClick={() => setOpenDrawer(false)}
+                  aria-label={t("header.closeMenu", {
+                    defaultValue: "Close menu",
+                  })}
+                  className="rounded-full p-2 text-neutral-700 transition-colors duration-200 hover:bg-neutral-100 dark:text-neutral-200 dark:hover:bg-neutral-800"
+                >
+                  <IoClose size={24} />
+                </button>
+              </div>
 
-					<a
-						href="#Contact"
-						className="text-base leading-6 text-neutral-600 dark:text-neutral-300 duration-300 hover:text-blue-400 dark:hover:text-blue-400"
-					>
-						{t(`header.contact`)}
-					</a>
-				</div>
+              <ul className="flex flex-1 flex-col gap-1 px-4 py-6">
+                {NAV_ITEMS.map((item) => (
+                  <li key={item.id}>
+                    <a
+                      href={`#${item.id}`}
+                      onClick={() => setOpenDrawer(false)}
+                      className="block rounded-lg px-3 py-3 text-base font-medium text-neutral-800 transition-colors duration-200 hover:bg-neutral-100 dark:text-neutral-100 dark:hover:bg-neutral-800"
+                    >
+                      {t(`header.${item.key}`)}
+                    </a>
+                  </li>
+                ))}
+              </ul>
 
-				<div className="hidden lg:flex flex-1 items-center justify-end gap-x-4">
-					<ThemeToggle />
-					<LanguageChanger />
-				</div>
-
-				<div className="flex lg:hidden">
-					<a className="rounded-full p-2 lg:hidden" onClick={toggleDrawer}>
-						<IoMenu size={28} />
-					</a>
-				</div>
-
-				<Drawer
-					open={openDrawer}
-					onClose={() => setOpenDrawer(false)}
-					className="max-w-60"
-					closeButton={false}
-				>
-					<Drawer.Body className="bg-white dark:bg-neutral-800 m-0 p-0 h-svh">
-						<div className="flex flex-col flex-1 h-full justify-between">
-							<div className="p-2 flex justify-end shadow">
-								<a
-									onClick={toggleDrawer}
-									className="flex p-2 justify-end rounded-full"
-								>
-									<IoClose size={28} />
-								</a>
-							</div>
-							<div className="flex flex-1 flex-col gap-4 p-4 text-right shadow">
-								<a
-									href="#Home"
-									onClick={toggleDrawer}
-									className="text-lg leading-6 text-neutral-600 dark:text-neutral-300"
-								>
-									{t(`header.home`)}
-								</a>
-								<a
-									href="#About"
-									onClick={toggleDrawer}
-									className="text-lg leading-6 text-neutral-600 dark:text-neutral-300"
-								>
-									{t(`header.about`)}
-								</a>
-								<a
-									href="#Skills"
-									onClick={toggleDrawer}
-									className="text-lg leading-6 text-neutral-600 dark:text-neutral-300"
-								>
-									{t(`header.skills`)}
-								</a>
-								<a
-									href="#Projects"
-									onClick={toggleDrawer}
-									className="text-lg leading-6 text-neutral-600 dark:text-neutral-300"
-								>
-									{t(`header.projects`)}
-								</a>
-								<a
-									href="#Contact"
-									onClick={toggleDrawer}
-									className="text-lg leading-6 text-neutral-600 dark:text-neutral-300"
-								>
-									{t(`header.contact`)}
-								</a>
-							</div>
-
-							<div className="flex p-4 text-right justify-end shadow gap-x-4">
-								<ThemeToggle />
-								<LanguageChanger />
-							</div>
-						</div>
-					</Drawer.Body>
-				</Drawer>
-			</div>
-		</header>
-	);
+              <div className="flex items-center justify-between gap-3 border-t border-neutral-200 p-4 dark:border-neutral-800">
+                <ThemeToggle />
+                <LanguageChanger />
+              </div>
+            </div>
+          </Drawer.Body>
+        </Drawer>
+      </nav>
+    </header>
+  );
 }

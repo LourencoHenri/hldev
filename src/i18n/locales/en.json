@@ -3,102 +3,154 @@
         "home": "Home",
         "about": "About",
         "skills": "Skills",
-        "projects": "Projects",
-        "contact": "Contact"
+        "projects": "Work",
+        "contact": "Contact",
+        "resume": "Resume",
+        "menu": "Menu",
+        "openMenu": "Open menu",
+        "closeMenu": "Close menu",
+        "aria": "Primary navigation"
     },
     "home": {
         "name": "Henrique",
-        "hello": "Hello, my name is",
-        "role": "I'm Software Developer"
+        "hello": "Software Developer",
+        "role": "Building scalable web and mobile softwares focused on performance and accessible design.",
+        "availability": "Available for new opportunities",
+        "ctaPrimary": "View selected work",
+        "ctaSecondary": "Get in touch",
+        "resumeEn": "Resume — EN",
+        "resumeDe": "Lebenslauf — DE"
     },
     "about": {
+        "eyebrow": "About",
         "title": "About",
-        "subtitle": "A bit about myself",
-        "content": "Front-End Developer specializing in TypeScript and modern JavaScript frameworks, with solid experience building scalable web and mobile applications using React, React Native, Next.js, and Vue.js. Experienced in creating high-performance interfaces, implementing responsive and accessible user interfaces, and collaborating effectively within agile, cross-functional teams. Strong focus on clean architecture, maintainable code, and delivering user-centered digital experiences.",
-        "sentence": "Living, learning & leveling up one day at a time"
+        "subtitle": "Software engineering with care for the details.",
+        "content": "Software Developer specializing in TypeScript and modern JavaScript frameworks, with solid experience building scalable web and mobile applications using React, React Native, Next.js, and Vue.js. Experienced in creating high-performance interfaces, implementing responsive and accessible user interfaces, and collaborating effectively within agile, cross-functional teams. Strong focus on clean architecture, maintainable code, and delivering user-centered digital experiences.",
+        "secondary": "Based in Salzwedel, Germany — open to relocation. Experience across fintech platforms in digital banking and cryptocurrency, reusable UI components with Storybook, and close collaboration with backend and product teams in agile environments.",
+        "resumeEn": "Download resume — English",
+        "resumeDe": "Lebenslauf herunterladen — Deutsch",
+        "stats": {
+            "role": "Role",
+            "roleValue": "Software Developer",
+            "location": "Based in",
+            "locationValue": "Salzwedel, Germany — open to relocation",
+            "focus": "Focus",
+            "focusValue": "React · TypeScript · Modern UI"
+        }
     },
     "skills": {
+        "eyebrow": "Toolkit",
         "title": "Skills",
+        "subtitle": "Tools I use to ship modern systems.",
         "frameworks": "Frameworks",
-        "styles": "Styles",
-        "systemAndPlatforms": "System and Platforms",
+        "styles": "Styling",
+        "systemAndPlatforms": "Tools & Platforms",
         "languages": "Languages"
     },
     "projects": {
+        "eyebrow": "Selected work",
         "title": "Projects",
-        "subtitle": "My Projects Collection",
-        "instruction": "Press access to visit the project page or the GitHub Icon to access the project in my repository.",
+        "subtitle": "A selection of recent work.",
+        "instruction": "A focused selection of projects exploring product UI, design systems, and full-stack experiments. Open the live demo or browse the source on GitHub.",
+        "empty": "No projects available right now.",
         "card": {
-            "access": "Access"
+            "access": "View live",
+            "github": "Open repository",
+            "featured": "Featured",
+            "repository": "Source available"
+        },
+        "filter": {
+            "label": "Filter projects",
+            "all": "All projects",
+            "featured": "Featured"
+        },
+        "pagination": {
+            "label": "Projects pagination",
+            "previous": "Previous",
+            "next": "Next"
         }
     },
     "contact": {
+        "eyebrow": "Contact",
         "title": "Contact",
-        "subtitle": "Contact me",
+        "subtitle": "Let's build something together.",
+        "intro": "Open to front-end opportunities, freelance projects, and collaborations. I usually respond within a business day.",
+        "cta": "Start a conversation",
+        "channels": {
+            "email": "Email"
+        },
         "form": {
             "name": "Name",
             "company": "Company",
             "email": "Email",
             "message": "How can I help you?",
-            "submit": "Let's Talk"
+            "submit": "Let's talk"
         }
+    },
+    "footer": {
+        "eyebrow": "Henrique Lourenço",
+        "tagline": "Front-End Developer building thoughtful, performant interfaces with React, TypeScript, and modern web tooling.",
+        "connect": "Connect",
+        "resume": "Resume",
+        "rights": "All rights reserved.",
+        "builtWith": "Built with Next.js, TypeScript and Tailwind CSS."
     },
     "portfolio": {
         "weatherApp": {
             "title": "Weather App",
-            "description": "Utilization of API to provide real-time weather information."
+            "description": "Real-time weather information powered by a public API, with a clean responsive interface."
         },
         "pomodoroTimer": {
             "title": "Pomodoro Timer",
-            "description": "Pomodoro Timer application that assists in time management and productivity enhancement."
+            "description": "Focus and time management app implementing the Pomodoro technique with a refined UI."
         },
         "toggleThemeMui": {
-            "title": "Toggle Theme - MUI",
-            "description": "The Toggle Theme MUI project allows you to switch between light and dark themes in a web application."
+            "title": "Toggle Theme — MUI",
+            "description": "Demo project showcasing seamless light and dark theme switching in a Material UI application."
         },
         "feed": {
             "title": "Feed",
-            "description": "Simulates a feed system, allowing the display of organized and interactive posts and comments."
+            "description": "Social feed prototype with organized, interactive posts and comments."
         },
         "toDoList": {
-            "title": "ToDo List",
-            "description": "Task list application, allowing users to create, organize, and manage their tasks efficiently and conveniently."
+            "title": "To-do List",
+            "description": "Task manager letting users create, organize, and track their daily work."
         },
         "calculator": {
             "title": "Calculator",
-            "description": "The project provides a calculator with both normal and scientific modes, featuring an intuitive interface."
+            "description": "Calculator with both standard and scientific modes wrapped in an intuitive interface."
         },
         "shop": {
             "title": "Shop",
-            "description": "The project incorporates e-commerce features, facilitating order processing and payment transactions."
+            "description": "E-commerce interface with order processing and payment flow."
         },
         "coffeeShop": {
             "title": "Coffee Shop",
-            "description": "The project includes café-related features, making it easy to handle orders and process payments efficiently."
+            "description": "Café-themed storefront with checkout flow and order management."
         },
         "gymMobileApp": {
-            "title": "Gym - Mobile",
-            "description": "Training app prototyped in Figma and developed with React Native."
+            "title": "Gym — Mobile",
+            "description": "Training app prototyped in Figma and built with React Native."
         },
         "gymApi": {
-            "title": "Gym - API",
-            "description": "API for the training app, developed in Node.js, using Prisma and Docker."
+            "title": "Gym — API",
+            "description": "Training app API built with Node.js, Prisma, and Docker."
         },
         "gymPassSystem": {
             "title": "GymPass System",
-            "description": "API developed in Node.js, using Prisma and Docker."
+            "description": "Backend service in Node.js using Prisma and Docker for a gym-pass platform."
         },
         "findAFriend": {
             "title": "Find a Friend",
-            "description": "API for an animal search system, developed in Node.js, using Prisma and Docker."
+            "description": "Pet adoption API built with Node.js, Prisma, Docker, and Fastify."
         },
         "dailyDietApi": {
             "title": "Daily Diet",
-            "description": "API for a nutritional control system, developed in Node.js, using Prisma and Docker."
+            "description": "Nutritional tracking API built with Node.js and Fastify."
         },
         "saasApi": {
             "title": "SaaS System API",
-            "description": "API developed in Node.js, using Prisma and Docker."
+            "description": "Multi-tenant SaaS API in Node.js, Prisma, and Docker."
         }
     }
 }
