@@ -133,12 +133,24 @@ export async function getProjects(): Promise<Project[]> {
 			.map(mapAirtableRecord)
 			.filter((p): p is Project => p !== null);
 
-		if (!mapped.length) return sortProjects(fallbackProjects);
+		if (!mapped.length) {
+			const fields = Array.from(
+				new Set(records.flatMap((r) => Object.keys(r.fields)))
+			);
+			console.error(
+				`[projects] Airtable returned ${records.length} record(s) but none had a usable "name". Fields seen: ${
+					fields.join(", ") || "(none)"
+				}. Falling back to local data.`
+			);
+			return sortProjects(fallbackProjects);
+		}
+
+		console.log(`[projects] Loaded ${mapped.length} project(s) from Airtable.`);
 		return sortProjects(mapped);
 	} catch (error) {
 		console.error(
-			"[projects] Airtable fetch failed, falling back to local data.",
-			error
+			"[projects] Airtable fetch failed, falling back to local data:",
+			error instanceof Error ? error.message : error
 		);
 		return sortProjects(fallbackProjects);
 	}
