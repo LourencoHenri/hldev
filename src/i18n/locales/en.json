@@ -25,8 +25,8 @@
         "eyebrow": "About",
         "title": "About",
         "subtitle": "Software engineering with care for the details.",
-        "content": "Software Developer specializing in TypeScript and modern JavaScript frameworks, with solid experience building scalable web and mobile applications using React, React Native, Next.js, and Vue.js. Experienced in creating high-performance interfaces, implementing responsive and accessible user interfaces, and collaborating effectively within agile, cross-functional teams. Strong focus on clean architecture, maintainable code, and delivering user-centered digital experiences.",
-        "secondary": "Based in Salzwedel, Germany - open to relocation. Experience across fintech platforms in digital banking and cryptocurrency, reusable UI components with Storybook, and close collaboration with backend and product teams in agile environments.",
+        "content": "Full Stack Developer specializing in TypeScript, with solid experience building scalable web and mobile applications using React, React Native, Next.js, and Vue.js. Experienced in designing REST APIs with Node.js and PHP/Laravel, modeling and migrating relational data, creating high-performance and accessible interfaces, and collaborating effectively within agile, cross-functional teams. Strong focus on clean architecture, maintainable code, and delivering user-centered digital experiences.",
+        "secondary": "Based in Salzwedel, Germany - open to relocation. Experience across multi-tenant fintech platforms in digital banking, cryptocurrency, and payments, serving dozens of tenants and thousands of end customers, with reusable UI components in Storybook and close collaboration with product and backend teams in agile environments.",
         "resumeEn": "Download resume - English",
         "resumeDe": "Lebenslauf herunterladen - Deutsch",
         "stats": {
@@ -74,7 +74,7 @@
         "eyebrow": "Contact",
         "title": "Contact",
         "subtitle": "Let's build something together.",
-        "intro": "Open to front-end opportunities, freelance projects, and collaborations. I usually respond within a business day.",
+        "intro": "Open to full-stack opportunities, freelance projects, and collaborations. I usually respond within a business day.",
         "cta": "Start a conversation",
         "channels": {
             "email": "Email"
@@ -89,7 +89,7 @@
     },
     "footer": {
         "eyebrow": "Henrique Lourenço",
-        "tagline": "Front-End Developer building thoughtful, performant interfaces with React, TypeScript, and modern web tooling.",
+        "tagline": "Full Stack Developer building applications with PHP/Laravel, Node.js, React, and React Native - backend, frontend, and the design in between.",
         "connect": "Connect",
         "resume": "Resume",
         "rights": "All rights reserved.",

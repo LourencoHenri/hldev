@@ -23,7 +23,7 @@ export default function Footer() {
 						<p className="max-w-md text-sm leading-relaxed text-neutral-500 dark:text-neutral-400">
 							{t("footer.tagline", {
 								defaultValue:
-									"Front-End Developer building thoughtful, performant interfaces with React, TypeScript, and modern web tooling.",
+									"Full Stack Developer building applications with PHP/Laravel, Node.js, React, and React Native - backend, frontend, and the design in between.",
 							})}
 						</p>
 					</div>
@@ -72,7 +72,7 @@ export default function Footer() {
 							{t("footer.resume", { defaultValue: "Resume" })}
 						</span>
 						<ul className="flex flex-col gap-2 text-sm">
-							<li>
+							{/* <li>
 								<a
 									href="/Henrique_Lourenço_Resume_English.pdf"
 									target="_blank"
@@ -84,7 +84,7 @@ export default function Footer() {
 										defaultValue: "Download resume - English",
 									})}
 								</a>
-							</li>
+							</li> */}
 							<li>
 								<a
 									href="/Henrique_Lourenço_Resume_Deutsch.pdf"

@@ -10,7 +10,7 @@ export default function About() {
     {
       label: t("about.stats.role", { defaultValue: "Role" }),
       value: t("about.stats.roleValue", {
-        defaultValue: "Front-End Developer",
+        defaultValue: "Full Stack Developer",
       }),
     },
     {

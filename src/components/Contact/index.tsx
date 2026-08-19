@@ -52,7 +52,7 @@ export default function Contact() {
 					<p className="mt-2 max-w-md text-base leading-relaxed text-neutral-500 dark:text-neutral-400">
 						{t("contact.intro", {
 							defaultValue:
-								"Open to front-end opportunities, freelance projects, and collaborations. I usually respond within a business day.",
+								"Open to full-stack opportunities, freelance projects, and collaborations. I usually respond within a business day.",
 						})}
 					</p>
 

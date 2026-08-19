@@ -1,9 +1,9 @@
 {
     "header": {
         "home": "Start",
-        "about": "Über",
-        "skills": "Fähigkeiten",
-        "projects": "Projekte",
+        "about": "Über mich",
+        "skills": "Kenntnisse",
+        "projects": "Arbeiten",
         "contact": "Kontakt",
         "resume": "Lebenslauf",
         "menu": "Menü",
@@ -13,35 +13,35 @@
     },
     "home": {
         "name": "Henrique",
-        "hello": "Front-End Developer",
-        "role": "Skalierbare Web- und Mobile-Interfaces mit React, React Native, Next.js und Vue.js - mit Fokus auf TypeScript, Performance und barrierefreies Design.",
+        "hello": "Software Developer",
+        "role": "Skalierbare Web- und Mobile-Anwendungen mit Fokus auf Performance und barrierefreies Design.",
         "availability": "Offen für neue Möglichkeiten",
-        "ctaPrimary": "Projekte ansehen",
+        "ctaPrimary": "Ausgewählte Arbeiten ansehen",
         "ctaSecondary": "Kontakt aufnehmen",
         "resumeEn": "Resume - EN",
         "resumeDe": "Lebenslauf - DE"
     },
     "about": {
-        "eyebrow": "Über",
-        "title": "Über",
-        "subtitle": "Front-End Engineering mit Liebe zum Detail.",
-        "content": "Front-End Developer mit Schwerpunkt auf TypeScript und modernen JavaScript-Frameworks und fundierter Erfahrung in der Entwicklung skalierbarer Web- und Mobile-Anwendungen mit React, React Native, Next.js und Vue.js. Fokus auf leistungsstarke Interfaces, responsive und barrierefreie UI, saubere Architektur, wartbaren Code und nutzerzentrierte digitale Erlebnisse.",
-        "secondary": "Wohnhaft in Santos, Brasilien - offen für Relocation. Erfahrung mit Fintech-Plattformen im Bereich Digital Banking und Kryptowährungen, wiederverwendbaren UI-Komponenten mit Storybook sowie enger Zusammenarbeit mit Backend- und Produktteams in agilen Umgebungen.",
-        "resumeEn": "Resume herunterladen - Englisch",
+        "eyebrow": "Über mich",
+        "title": "Über mich",
+        "subtitle": "Software-Engineering mit Liebe zum Detail.",
+        "content": "Full Stack Developer mit Schwerpunkt auf TypeScript und fundierter Erfahrung in der Entwicklung skalierbarer Web- und Mobile-Anwendungen mit React, React Native, Next.js und Vue.js. Erfahren im Design von REST APIs mit Node.js und PHP/Laravel, in der Modellierung und Migration relationaler Daten, in der Umsetzung performanter und barrierefreier Interfaces sowie in der effektiven Zusammenarbeit in agilen, interdisziplinären Teams. Starker Fokus auf saubere Architektur, wartbaren Code und nutzerzentrierte digitale Erlebnisse.",
+        "secondary": "Wohnhaft in Salzwedel, Deutschland – offen für Relocation. Erfahrung mit mandantenfähigen (Multi-Tenant) Fintech-Plattformen in den Bereichen Digital Banking, Kryptowährungen und Zahlungsverkehr für Dutzende Mandanten und Tausende Endkunden – mit wiederverwendbaren UI-Komponenten in Storybook und enger Zusammenarbeit mit Produkt- und Backend-Teams in agilen Umgebungen.",
+        "resumeEn": "Lebenslauf herunterladen - Englisch",
         "resumeDe": "Lebenslauf herunterladen - Deutsch",
         "stats": {
             "role": "Rolle",
-            "roleValue": "Front-End Developer",
+            "roleValue": "Software Developer",
             "location": "Standort",
-            "locationValue": "Santos, Brasilien - offen für Relocation",
+            "locationValue": "Salzwedel, Deutschland – offen für Relocation",
             "focus": "Fokus",
             "focusValue": "React · TypeScript · Modernes UI"
         }
     },
     "skills": {
         "eyebrow": "Toolkit",
-        "title": "Fähigkeiten",
-        "subtitle": "Werkzeuge, mit denen ich moderne Interfaces baue.",
+        "title": "Kenntnisse",
+        "subtitle": "Werkzeuge, mit denen ich moderne Systeme entwickle.",
         "frameworks": "Frameworks",
         "styles": "Styling",
         "systemAndPlatforms": "Tools & Plattformen",
@@ -51,7 +51,7 @@
         "eyebrow": "Ausgewählte Arbeiten",
         "title": "Projekte",
         "subtitle": "Eine Auswahl aktueller Arbeiten.",
-        "instruction": "Eine fokussierte Auswahl an Projekten rund um Produkt-UI, Design-Systeme und Full-Stack-Experimente. Live-Demo öffnen oder den Quellcode auf GitHub ansehen.",
+        "instruction": "Eine fokussierte Auswahl an Projekten rund um Produkt-UI, Design-Systeme und Full-Stack-Experimente. Öffnen Sie die Live-Demo oder sehen Sie sich den Quellcode auf GitHub an.",
         "empty": "Aktuell sind keine Projekte verfügbar.",
         "card": {
             "access": "Live ansehen",
@@ -73,8 +73,8 @@
     "contact": {
         "eyebrow": "Kontakt",
         "title": "Kontakt",
-        "subtitle": "Lass uns gemeinsam etwas bauen.",
-        "intro": "Offen für Front-End-Positionen, Freelance-Projekte und Kooperationen. Ich antworte in der Regel innerhalb eines Werktags.",
+        "subtitle": "Lassen Sie uns gemeinsam etwas bauen.",
+        "intro": "Offen für Full-Stack-Positionen, Freelance-Projekte und Kooperationen. Ich antworte in der Regel innerhalb eines Werktags.",
         "cta": "Gespräch starten",
         "channels": {
             "email": "E-Mail"
@@ -83,13 +83,13 @@
             "name": "Name",
             "company": "Unternehmen",
             "email": "E-Mail",
-            "message": "Wie kann ich helfen?",
-            "submit": "Lass uns reden"
+            "message": "Wie kann ich Ihnen helfen?",
+            "submit": "Sprechen wir"
         }
     },
     "footer": {
         "eyebrow": "Henrique Lourenço",
-        "tagline": "Front-End Developer, der durchdachte und performante Interfaces mit React, TypeScript und modernen Web-Technologien entwickelt.",
+        "tagline": "Full Stack Developer, der Anwendungen mit PHP/Laravel, Node.js, React und React Native entwickelt – Backend, Frontend und das Design dazwischen.",
         "connect": "Kontakt",
         "resume": "Lebenslauf",
         "rights": "Alle Rechte vorbehalten.",
@@ -98,7 +98,7 @@
     "portfolio": {
         "weatherApp": {
             "title": "Wetter-App",
-            "description": "Echtzeit-Wetterinformationen über eine öffentliche API mit responsivem Interface."
+            "description": "Echtzeit-Wetterinformationen über eine öffentliche API, mit klarem, responsivem Interface."
         },
         "pomodoroTimer": {
             "title": "Pomodoro Timer",
@@ -106,7 +106,7 @@
         },
         "toggleThemeMui": {
             "title": "Toggle Theme - MUI",
-            "description": "Demo-Projekt mit nahtlosem Wechsel zwischen hellem und dunklem Theme in Material UI."
+            "description": "Demo-Projekt mit nahtlosem Wechsel zwischen hellem und dunklem Theme in einer Material-UI-Anwendung."
         },
         "feed": {
             "title": "Feed",
@@ -114,15 +114,15 @@
         },
         "toDoList": {
             "title": "Aufgabenliste",
-            "description": "Aufgaben-Manager zum Erstellen, Organisieren und Verfolgen täglicher To-dos."
+            "description": "Aufgaben-Manager zum Erstellen, Organisieren und Verfolgen täglicher Aufgaben."
         },
         "calculator": {
             "title": "Rechner",
-            "description": "Rechner mit Standard- und wissenschaftlichem Modus, eingebettet in ein intuitives UI."
+            "description": "Rechner mit Standard- und wissenschaftlichem Modus in einem intuitiven Interface."
         },
         "shop": {
             "title": "Shop",
-            "description": "E-Commerce-Interface mit Bestell- und Zahlungsablauf."
+            "description": "E-Commerce-Interface mit Bestellabwicklung und Zahlungsablauf."
         },
         "coffeeShop": {
             "title": "Coffee Shop",
@@ -134,7 +134,7 @@
         },
         "gymApi": {
             "title": "Gym - API",
-            "description": "API für die Trainings-App mit Node.js, Prisma und Docker."
+            "description": "API für die Trainings-App, entwickelt mit Node.js, Prisma und Docker."
         },
         "gymPassSystem": {
             "title": "GymPass System",
@@ -142,15 +142,15 @@
         },
         "findAFriend": {
             "title": "Find a Friend",
-            "description": "API zur Tieradoption mit Node.js, Prisma, Docker und Fastify."
+            "description": "API zur Tieradoption, entwickelt mit Node.js, Prisma, Docker und Fastify."
         },
         "dailyDietApi": {
             "title": "Daily Diet",
-            "description": "API für ein Ernährungs-Tracking-System, entwickelt in Node.js mit Fastify."
+            "description": "API für Ernährungs-Tracking, entwickelt mit Node.js und Fastify."
         },
         "saasApi": {
             "title": "SaaS System API",
-            "description": "Multi-Tenant SaaS-API in Node.js, Prisma und Docker."
+            "description": "Mandantenfähige (Multi-Tenant) SaaS-API in Node.js, Prisma und Docker."
         },
         "bellasDiVestidos": {
             "title": "Bellas di Vestidos",
@@ -158,15 +158,15 @@
         },
         "drAmandaCorrea": {
             "title": "Dr. Amanda Correa",
-            "description": "Website einer Zahnarztpraxis, die Sorgfalt, Vertrauen und Herzlichkeit vermittelt."
+            "description": "Website einer Zahnarztpraxis, die Sorgfalt, Vertrauen und einen herzlichen ersten Eindruck vermittelt."
         },
         "appMeuCard": {
             "title": "MeuCard",
-            "description": "App zur Beantragung einer Prepaid-Kreditkarte, mit Krypto-Unterstützung."
+            "description": "Mobile App zur Beantragung einer Prepaid-Kreditkarte, mit Krypto-Unterstützung."
         },
         "getPay": {
             "title": "GetPay",
-            "description": "Payment-Gateway mit vollständigem Backoffice für die Transaktionsverwaltung."
+            "description": "Payment-Gateway mit vollständigem Backoffice für die durchgängige Transaktionsverwaltung."
         }
     }
 }

@@ -2,6 +2,58 @@ import { Project } from "@/src/types/project";
 
 export const fallbackProjects: Project[] = [
 	{
+		id: 15,
+		name: "bellasDiVestidos",
+		description:
+			"Children's boutique for buying and renting party dresses, with a charming catalog.",
+		technologies: ["nextJs", "react", "airtable"],
+		gitHubUrl: "",
+		siteUrl: "https://atelie-bellas-di-vestidos.vercel.app/",
+		image:
+			"https://images.unsplash.com/photo-1560506840-ec148e82a604?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+		featured: true,
+		order: 1,
+	},
+	{
+		id: 16,
+		name: "drAmandaCorrea",
+		description:
+			"Dental practice website designed to convey care, trust and a welcoming first impression.",
+		technologies: ["nextJs", "react"],
+		gitHubUrl: "",
+		siteUrl: "https://dra-amanda-correa.vercel.app/",
+		image:
+			"https://images.unsplash.com/photo-1559592892-19db4235d786?q=80&w=1530&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+		featured: true,
+		order: 2,
+	},
+	{
+		id: 17,
+		name: "appMeuCard",
+		description:
+			"Mobile app for requesting a prepaid credit card, with crypto support.",
+		technologies: ["react", "node", "mui"],
+		gitHubUrl: "",
+		siteUrl: "https://app.meucard.io/",
+		image:
+			"https://images.unsplash.com/photo-1628527304948-06157ee3c8a6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+		featured: true,
+		order: 3,
+	},
+	{
+		id: 18,
+		name: "getPay",
+		description:
+			"Payment gateway with a complete back-office for end-to-end transaction management.",
+		technologies: ["php", "docker", "laravel"],
+		gitHubUrl: "",
+		siteUrl: "https://app.getpay.one/dashboard",
+		image:
+			"https://images.unsplash.com/photo-1667566455648-262db767912b?q=80&w=1157&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+		featured: true,
+		order: 4,
+	},
+	{
 		id: 11,
 		name: "gymPassSystem",
 		description: "API developed in Node.js, using Prisma and Docker.",
@@ -11,7 +63,7 @@ export const fallbackProjects: Project[] = [
 		image:
 			"https://images.unsplash.com/photo-1521804906057-1df8fdb718b7?q=80&w=1770&auto=format&fit=crop",
 		featured: true,
-		order: 1,
+		order: 5,
 	},
 	{
 		id: 10,
@@ -23,7 +75,7 @@ export const fallbackProjects: Project[] = [
 		siteUrl: "",
 		image:
 			"https://images.unsplash.com/photo-1574680178050-55c6a6a96e0a?q=80&w=1769&auto=format&fit=crop",
-		order: 2,
+		order: 6,
 	},
 	{
 		id: 9,
@@ -36,7 +88,7 @@ export const fallbackProjects: Project[] = [
 		image:
 			"https://images.unsplash.com/photo-1483721310020-03333e577078?q=80&w=1856&auto=format&fit=crop",
 		featured: true,
-		order: 3,
+		order: 7,
 	},
 	{
 		id: 14,
@@ -47,7 +99,7 @@ export const fallbackProjects: Project[] = [
 		siteUrl: "",
 		image:
 			"https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1974&auto=format&fit=crop",
-		order: 4,
+		order: 8,
 	},
 	{
 		id: 7,
@@ -60,7 +112,7 @@ export const fallbackProjects: Project[] = [
 		image:
 			"https://images.unsplash.com/photo-1619410283995-43d9134e7656?q=80&w=1770&auto=format&fit=crop",
 		featured: true,
-		order: 5,
+		order: 9,
 	},
 	{
 		id: 13,
@@ -72,7 +124,7 @@ export const fallbackProjects: Project[] = [
 		siteUrl: "",
 		image:
 			"https://images.unsplash.com/photo-1708987379841-2badb0d3a95a?q=80&w=1770&auto=format&fit=crop",
-		order: 6,
+		order: 10,
 	},
 	{
 		id: 12,
@@ -84,7 +136,7 @@ export const fallbackProjects: Project[] = [
 		siteUrl: "",
 		image:
 			"https://images.unsplash.com/photo-1534361960057-19889db9621e?q=80&w=1770&auto=format&fit=crop",
-		order: 7,
+		order: 11,
 	},
 	{
 		id: 8,
@@ -96,7 +148,7 @@ export const fallbackProjects: Project[] = [
 		siteUrl: "",
 		image:
 			"https://images.unsplash.com/photo-1522252234503-e356532cafd5?q=80&w=1025&auto=format&fit=crop",
-		order: 8,
+		order: 12,
 	},
 	{
 		id: 2,
@@ -108,7 +160,7 @@ export const fallbackProjects: Project[] = [
 		siteUrl: "",
 		image:
 			"https://images.unsplash.com/photo-1495364141860-b0d03eccd065?q=80&w=1770&auto=format&fit=crop",
-		order: 9,
+		order: 13,
 	},
 	{
 		id: 3,
@@ -120,7 +172,7 @@ export const fallbackProjects: Project[] = [
 		siteUrl: "https://lourencohenri.github.io/feed/",
 		image:
 			"https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=1740&auto=format&fit=crop",
-		order: 10,
+		order: 14,
 	},
 	{
 		id: 4,
@@ -132,7 +184,7 @@ export const fallbackProjects: Project[] = [
 		siteUrl: "",
 		image:
 			"https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=1772&auto=format&fit=crop",
-		order: 11,
+		order: 15,
 	},
 	{
 		id: 6,
@@ -144,7 +196,7 @@ export const fallbackProjects: Project[] = [
 		siteUrl: "",
 		image:
 			"https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=1771&auto=format&fit=crop",
-		order: 12,
+		order: 16,
 	},
 	{
 		id: 5,
@@ -156,7 +208,7 @@ export const fallbackProjects: Project[] = [
 		siteUrl: "",
 		image:
 			"https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?q=80&w=1770&auto=format&fit=crop",
-		order: 13,
+		order: 17,
 	},
 	{
 		id: 1,
@@ -168,6 +220,6 @@ export const fallbackProjects: Project[] = [
 		siteUrl: "",
 		image:
 			"https://images.unsplash.com/photo-1498804103079-a6351b050096?q=80&w=1770&auto=format&fit=crop",
-		order: 14,
+		order: 18,
 	},
 ];

@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 	creator: "Henrique Lourenço",
 	keywords: [
 		"Henrique Lourenço",
-		"Front-End Developer",
+		"Full Stack Developer",
 		"Software Developer",
 		"React",
 		"React Native",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
 				url: "/og.png",
 				width: 1200,
 				height: 600,
-				alt: "Henrique Lourenço - Front-End Developer",
+				alt: "Henrique Lourenço - Full Stack Developer",
 			},
 		],
 	},
