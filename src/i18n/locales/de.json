@@ -14,26 +14,26 @@
     "home": {
         "name": "Henrique",
         "hello": "Front-End Developer",
-        "role": "Skalierbare Web- und Mobile-Interfaces mit React, React Native, Next.js und Vue.js — mit Fokus auf TypeScript, Performance und barrierefreies Design.",
+        "role": "Skalierbare Web- und Mobile-Interfaces mit React, React Native, Next.js und Vue.js - mit Fokus auf TypeScript, Performance und barrierefreies Design.",
         "availability": "Offen für neue Möglichkeiten",
         "ctaPrimary": "Projekte ansehen",
         "ctaSecondary": "Kontakt aufnehmen",
-        "resumeEn": "Resume — EN",
-        "resumeDe": "Lebenslauf — DE"
+        "resumeEn": "Resume - EN",
+        "resumeDe": "Lebenslauf - DE"
     },
     "about": {
         "eyebrow": "Über",
         "title": "Über",
         "subtitle": "Front-End Engineering mit Liebe zum Detail.",
         "content": "Front-End Developer mit Schwerpunkt auf TypeScript und modernen JavaScript-Frameworks und fundierter Erfahrung in der Entwicklung skalierbarer Web- und Mobile-Anwendungen mit React, React Native, Next.js und Vue.js. Fokus auf leistungsstarke Interfaces, responsive und barrierefreie UI, saubere Architektur, wartbaren Code und nutzerzentrierte digitale Erlebnisse.",
-        "secondary": "Wohnhaft in Santos, Brasilien — offen für Relocation. Erfahrung mit Fintech-Plattformen im Bereich Digital Banking und Kryptowährungen, wiederverwendbaren UI-Komponenten mit Storybook sowie enger Zusammenarbeit mit Backend- und Produktteams in agilen Umgebungen.",
-        "resumeEn": "Resume herunterladen — Englisch",
-        "resumeDe": "Lebenslauf herunterladen — Deutsch",
+        "secondary": "Wohnhaft in Santos, Brasilien - offen für Relocation. Erfahrung mit Fintech-Plattformen im Bereich Digital Banking und Kryptowährungen, wiederverwendbaren UI-Komponenten mit Storybook sowie enger Zusammenarbeit mit Backend- und Produktteams in agilen Umgebungen.",
+        "resumeEn": "Resume herunterladen - Englisch",
+        "resumeDe": "Lebenslauf herunterladen - Deutsch",
         "stats": {
             "role": "Rolle",
             "roleValue": "Front-End Developer",
             "location": "Standort",
-            "locationValue": "Santos, Brasilien — offen für Relocation",
+            "locationValue": "Santos, Brasilien - offen für Relocation",
             "focus": "Fokus",
             "focusValue": "React · TypeScript · Modernes UI"
         }
@@ -105,7 +105,7 @@
             "description": "Fokus- und Zeitmanagement-App nach der Pomodoro-Technik mit klarem UI."
         },
         "toggleThemeMui": {
-            "title": "Toggle Theme — MUI",
+            "title": "Toggle Theme - MUI",
             "description": "Demo-Projekt mit nahtlosem Wechsel zwischen hellem und dunklem Theme in Material UI."
         },
         "feed": {
@@ -129,11 +129,11 @@
             "description": "Café-Storefront mit Checkout-Flow und Bestellverwaltung."
         },
         "gymMobileApp": {
-            "title": "Gym — Mobile",
+            "title": "Gym - Mobile",
             "description": "Trainings-App, prototypisiert in Figma und entwickelt mit React Native."
         },
         "gymApi": {
-            "title": "Gym — API",
+            "title": "Gym - API",
             "description": "API für die Trainings-App mit Node.js, Prisma und Docker."
         },
         "gymPassSystem": {
@@ -151,6 +151,22 @@
         "saasApi": {
             "title": "SaaS System API",
             "description": "Multi-Tenant SaaS-API in Node.js, Prisma und Docker."
+        },
+        "bellasDiVestidos": {
+            "title": "Bellas di Vestidos",
+            "description": "Kinder-Boutique für Kauf und Verleih von Festkleidern, mit bezauberndem Katalog."
+        },
+        "drAmandaCorrea": {
+            "title": "Dr. Amanda Correa",
+            "description": "Website einer Zahnarztpraxis, die Sorgfalt, Vertrauen und Herzlichkeit vermittelt."
+        },
+        "appMeuCard": {
+            "title": "MeuCard",
+            "description": "App zur Beantragung einer Prepaid-Kreditkarte, mit Krypto-Unterstützung."
+        },
+        "getPay": {
+            "title": "GetPay",
+            "description": "Payment-Gateway mit vollständigem Backoffice für die Transaktionsverwaltung."
         }
     }
 }

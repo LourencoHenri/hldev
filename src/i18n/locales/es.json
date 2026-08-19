@@ -14,26 +14,26 @@
     "home": {
         "name": "Henrique",
         "hello": "Front-End Developer",
-        "role": "Construyendo interfaces web y móviles escalables con React, React Native, Next.js y Vue.js — con foco en TypeScript, rendimiento y diseño accesible.",
+        "role": "Construyendo interfaces web y móviles escalables con React, React Native, Next.js y Vue.js - con foco en TypeScript, rendimiento y diseño accesible.",
         "availability": "Disponible para nuevas oportunidades",
         "ctaPrimary": "Ver proyectos",
         "ctaSecondary": "Contáctame",
-        "resumeEn": "CV — EN",
-        "resumeDe": "Lebenslauf — DE"
+        "resumeEn": "CV - EN",
+        "resumeDe": "Lebenslauf - DE"
     },
     "about": {
         "eyebrow": "Sobre",
         "title": "Sobre",
         "subtitle": "Ingeniería front-end con cuidado por los detalles.",
         "content": "Desarrollador Front-End especializado en TypeScript y frameworks modernos de JavaScript, con sólida experiencia construyendo aplicaciones web y móviles escalables con React, React Native, Next.js y Vue.js. Foco en interfaces de alto rendimiento, UI responsiva y accesible, arquitectura limpia, código mantenible y experiencias digitales centradas en el usuario.",
-        "secondary": "Basado en Santos, Brasil — abierto a relocation. Experiencia en plataformas fintech de banca digital y criptomonedas, componentes de UI reutilizables con Storybook, y colaboración cercana con equipos de backend y producto en entornos ágiles.",
-        "resumeEn": "Descargar CV — Inglés",
-        "resumeDe": "Lebenslauf — Alemán",
+        "secondary": "Basado en Santos, Brasil - abierto a relocation. Experiencia en plataformas fintech de banca digital y criptomonedas, componentes de UI reutilizables con Storybook, y colaboración cercana con equipos de backend y producto en entornos ágiles.",
+        "resumeEn": "Descargar CV - Inglés",
+        "resumeDe": "Lebenslauf - Alemán",
         "stats": {
             "role": "Rol",
             "roleValue": "Front-End Developer",
             "location": "Ubicación",
-            "locationValue": "Santos, Brasil — abierto a relocation",
+            "locationValue": "Santos, Brasil - abierto a relocation",
             "focus": "Foco",
             "focusValue": "React · TypeScript · UI moderno"
         }
@@ -105,7 +105,7 @@
             "description": "Aplicación de foco y gestión del tiempo con la técnica Pomodoro y UI cuidada."
         },
         "toggleThemeMui": {
-            "title": "Toggle Theme — MUI",
+            "title": "Toggle Theme - MUI",
             "description": "Proyecto demo con cambio fluido entre temas claro y oscuro usando Material UI."
         },
         "feed": {
@@ -129,11 +129,11 @@
             "description": "Tienda temática de cafetería con checkout y gestión de pedidos."
         },
         "gymMobileApp": {
-            "title": "Gym — Mobile",
+            "title": "Gym - Mobile",
             "description": "App de entrenamiento prototipada en Figma y desarrollada con React Native."
         },
         "gymApi": {
-            "title": "Gym — API",
+            "title": "Gym - API",
             "description": "API de la app de entrenamiento construida con Node.js, Prisma y Docker."
         },
         "gymPassSystem": {
@@ -151,6 +151,22 @@
         "saasApi": {
             "title": "SaaS System API",
             "description": "API multi-tenant para SaaS en Node.js, Prisma y Docker."
+        },
+        "bellasDiVestidos": {
+            "title": "Bellas di Vestidos",
+            "description": "Boutique infantil de venta y alquiler de vestidos de fiesta, con catálogo encantador."
+        },
+        "drAmandaCorrea": {
+            "title": "Dra. Amanda Correa",
+            "description": "Sitio de consultorio odontológico creado para transmitir cuidado, confianza y cercanía."
+        },
+        "appMeuCard": {
+            "title": "MeuCard",
+            "description": "Aplicación para solicitar una tarjeta de crédito prepago, con soporte para cripto."
+        },
+        "getPay": {
+            "title": "GetPay",
+            "description": "Pasarela de pagos con back-office completo para la gestión integral de transacciones."
         }
     }
 }

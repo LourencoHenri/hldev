@@ -18,22 +18,22 @@
         "availability": "Available for new opportunities",
         "ctaPrimary": "View selected work",
         "ctaSecondary": "Get in touch",
-        "resumeEn": "Resume — EN",
-        "resumeDe": "Lebenslauf — DE"
+        "resumeEn": "Resume - EN",
+        "resumeDe": "Lebenslauf - DE"
     },
     "about": {
         "eyebrow": "About",
         "title": "About",
         "subtitle": "Software engineering with care for the details.",
         "content": "Software Developer specializing in TypeScript and modern JavaScript frameworks, with solid experience building scalable web and mobile applications using React, React Native, Next.js, and Vue.js. Experienced in creating high-performance interfaces, implementing responsive and accessible user interfaces, and collaborating effectively within agile, cross-functional teams. Strong focus on clean architecture, maintainable code, and delivering user-centered digital experiences.",
-        "secondary": "Based in Salzwedel, Germany — open to relocation. Experience across fintech platforms in digital banking and cryptocurrency, reusable UI components with Storybook, and close collaboration with backend and product teams in agile environments.",
-        "resumeEn": "Download resume — English",
-        "resumeDe": "Lebenslauf herunterladen — Deutsch",
+        "secondary": "Based in Salzwedel, Germany - open to relocation. Experience across fintech platforms in digital banking and cryptocurrency, reusable UI components with Storybook, and close collaboration with backend and product teams in agile environments.",
+        "resumeEn": "Download resume - English",
+        "resumeDe": "Lebenslauf herunterladen - Deutsch",
         "stats": {
             "role": "Role",
             "roleValue": "Software Developer",
             "location": "Based in",
-            "locationValue": "Salzwedel, Germany — open to relocation",
+            "locationValue": "Salzwedel, Germany - open to relocation",
             "focus": "Focus",
             "focusValue": "React · TypeScript · Modern UI"
         }
@@ -105,7 +105,7 @@
             "description": "Focus and time management app implementing the Pomodoro technique with a refined UI."
         },
         "toggleThemeMui": {
-            "title": "Toggle Theme — MUI",
+            "title": "Toggle Theme - MUI",
             "description": "Demo project showcasing seamless light and dark theme switching in a Material UI application."
         },
         "feed": {
@@ -129,11 +129,11 @@
             "description": "Café-themed storefront with checkout flow and order management."
         },
         "gymMobileApp": {
-            "title": "Gym — Mobile",
+            "title": "Gym - Mobile",
             "description": "Training app prototyped in Figma and built with React Native."
         },
         "gymApi": {
-            "title": "Gym — API",
+            "title": "Gym - API",
             "description": "Training app API built with Node.js, Prisma, and Docker."
         },
         "gymPassSystem": {
@@ -151,6 +151,22 @@
         "saasApi": {
             "title": "SaaS System API",
             "description": "Multi-tenant SaaS API in Node.js, Prisma, and Docker."
+        },
+        "bellasDiVestidos": {
+            "title": "Bellas di Vestidos",
+            "description": "Children's boutique for buying and renting party dresses, with a charming catalog."
+        },
+        "drAmandaCorrea": {
+            "title": "Dr. Amanda Correa",
+            "description": "Dental practice website designed to convey care, trust and a welcoming first impression."
+        },
+        "appMeuCard": {
+            "title": "MeuCard",
+            "description": "Mobile app for requesting a prepaid credit card, with crypto support."
+        },
+        "getPay": {
+            "title": "GetPay",
+            "description": "Payment gateway with a complete back-office for end-to-end transaction management."
         }
     }
 }

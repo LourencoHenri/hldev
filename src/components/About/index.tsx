@@ -16,7 +16,7 @@ export default function About() {
     {
       label: t("about.stats.location", { defaultValue: "Based in" }),
       value: t("about.stats.locationValue", {
-        defaultValue: "Santos, Brazil — open to relocation",
+        defaultValue: "Santos, Brazil - open to relocation",
       }),
     },
     {
@@ -67,7 +67,7 @@ export default function About() {
 						>
 							<FiDownload size={14} />
 							{t("about.resumeEn", {
-								defaultValue: "Download resume — English",
+								defaultValue: "Download resume - English",
 							})}
 						</a>
 						<a
@@ -78,7 +78,7 @@ export default function About() {
 						>
 							<FiDownload size={14} />
 							{t("about.resumeDe", {
-								defaultValue: "Lebenslauf herunterladen — Deutsch",
+								defaultValue: "Lebenslauf herunterladen - Deutsch",
 							})}
 						</a>
 					</div> */}

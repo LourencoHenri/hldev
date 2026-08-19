@@ -72,7 +72,7 @@ export default function Home() {
             className="inline-flex items-center gap-1.5 transition-colors duration-200 hover:text-neutral-900 dark:hover:text-white"
           >
             <FiDownload size={14} />
-            {t("home.resumeEn", { defaultValue: "Resume — EN" })}
+            {t("home.resumeEn", { defaultValue: "Resume - EN" })}
           </a>
           <span
             aria-hidden
@@ -85,7 +85,7 @@ export default function Home() {
             className="inline-flex items-center gap-1.5 transition-colors duration-200 hover:text-neutral-900 dark:hover:text-white"
           >
             <FiDownload size={14} />
-            {t("home.resumeDe", { defaultValue: "Lebenslauf — DE" })}
+            {t("home.resumeDe", { defaultValue: "Lebenslauf - DE" })}
           </a>
           <span
             aria-hidden

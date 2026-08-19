@@ -4,6 +4,10 @@ import { airtableFetch } from "./airtable";
 import { Project, TechnologyKey } from "@/src/types/project";
 import { fallbackProjects } from "@/src/data/projects";
 
+type AirtableImage =
+	| string
+	| Array<{ url: string; thumbnails?: { large?: { url: string } } }>;
+
 interface AirtableProjectFields {
 	name?: string;
 	title?: string;
@@ -11,9 +15,8 @@ interface AirtableProjectFields {
 	technologies?: string | string[];
 	gitHubUrl?: string;
 	siteUrl?: string;
-	image?:
-		| string
-		| Array<{ url: string; thumbnails?: { large?: { url: string } } }>;
+	image?: AirtableImage;
+	imageFile?: AirtableImage;
 	featured?: boolean;
 	order?: number;
 }
@@ -58,7 +61,13 @@ const TECH_ALIASES: Record<string, TechnologyKey> = {
 	css: "css",
 	css3: "css",
 	storybook: "storybook",
+	express: "express",
+	"express.js": "express",
+	expressjs: "express",
 	jira: "jira",
+	php: "php",
+	laravel: "laravel",
+	airtable: "airtable",
 };
 
 function normalizeTechnologies(
@@ -76,7 +85,7 @@ function normalizeTechnologies(
 	return Array.from(seen);
 }
 
-function pickImage(value: AirtableProjectFields["image"]): string {
+function pickImage(value: AirtableImage | undefined): string {
 	if (!value) return "";
 	if (typeof value === "string") return value;
 	const first = value[0];
@@ -100,7 +109,7 @@ function mapAirtableRecord(record: {
 		technologies: normalizeTechnologies(f.technologies),
 		gitHubUrl: f.gitHubUrl?.trim() ?? "",
 		siteUrl: f.siteUrl?.trim() ?? "",
-		image: pickImage(f.image),
+		image: pickImage(f.imageFile) || pickImage(f.image),
 		featured: Boolean(f.featured),
 		order: typeof f.order === "number" ? f.order : undefined,
 	};

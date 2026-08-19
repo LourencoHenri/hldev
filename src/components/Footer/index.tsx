@@ -81,7 +81,7 @@ export default function Footer() {
 								>
 									<FiDownload size={14} />
 									{t("about.resumeEn", {
-										defaultValue: "Download resume — English",
+										defaultValue: "Download resume - English",
 									})}
 								</a>
 							</li>
@@ -94,7 +94,7 @@ export default function Footer() {
 								>
 									<FiDownload size={14} />
 									{t("about.resumeDe", {
-										defaultValue: "Lebenslauf herunterladen — Deutsch",
+										defaultValue: "Lebenslauf herunterladen - Deutsch",
 									})}
 								</a>
 							</li>

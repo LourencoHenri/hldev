@@ -18,7 +18,11 @@ export type TechnologyKey =
 	| "html"
 	| "css"
 	| "storybook"
-	| "jira";
+	| "express"
+	| "jira"
+	| "php"
+	| "laravel"
+	| "airtable";
 
 export interface Project {
 	id: string | number;

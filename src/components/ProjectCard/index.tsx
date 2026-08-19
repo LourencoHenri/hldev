@@ -31,7 +31,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           // eslint-disable-next-line @next/next/no-img-element
           <img
             src={project.image}
-            alt={`${title} — project preview`}
+            alt={`${title} - project preview`}
             loading="lazy"
             className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
           />
@@ -83,7 +83,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
               rel="noopener noreferrer"
               aria-label={`${t("projects.card.access", {
                 defaultValue: "View live",
-              })} — ${title}`}
+              })} - ${title}`}
               className="inline-flex items-center gap-1.5 text-sm font-medium text-neutral-900 transition-colors duration-200 hover:text-blue-500 dark:text-neutral-100 dark:hover:text-blue-400"
             >
               {t("projects.card.access", { defaultValue: "View live" })}
@@ -107,7 +107,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
               rel="noopener noreferrer"
               aria-label={`${t("projects.card.github", {
                 defaultValue: "Open repository",
-              })} — ${title}`}
+              })} - ${title}`}
               className="inline-flex h-8 w-8 items-center justify-center rounded-full text-neutral-500 transition-all duration-200 hover:bg-neutral-900 hover:text-white dark:text-neutral-400 dark:hover:bg-neutral-100 dark:hover:text-neutral-900"
             >
               <SiGithub size={16} />

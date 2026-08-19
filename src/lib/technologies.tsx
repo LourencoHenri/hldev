@@ -19,7 +19,11 @@ import {
 	SiFastify,
 	SiVuedotjs,
 	SiStorybook,
+	SiExpress,
 	SiJira,
+	SiPhp,
+	SiLaravel,
+	SiAirtable 
 } from "react-icons/si";
 
 import { TechnologyKey } from "@/src/types/project";
@@ -52,5 +56,9 @@ export const TECHNOLOGIES_MAP: Record<
 	html: { name: "HTML5", icon: <SiHtml5 size={iconSize} /> },
 	css: { name: "CSS3", icon: <SiCss size={iconSize} /> },
 	storybook: { name: "Storybook", icon: <SiStorybook size={iconSize} /> },
+	express: { name: "Express", icon: <SiExpress size={iconSize} /> },
 	jira: { name: "Jira", icon: <SiJira size={iconSize} /> },
+	php: { name: "PHP", icon: <SiPhp size={iconSize} /> },
+	laravel: { name: "Laravel", icon: <SiLaravel size={iconSize} /> },
+	airtable: { name: "Airtable", icon: <SiAirtable size={iconSize} /> },
 };

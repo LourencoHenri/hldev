@@ -51,7 +51,7 @@ export default function Header() {
       >
         <a
           href="#Home"
-          aria-label="Henrique Lourenço — back to top"
+          aria-label="Henrique Lourenço - back to top"
           className="flex shrink-0 items-center"
         >
           {mounted ? isDark ? <LogoWhite /> : <LogoBlack /> : <LogoBlack />}
